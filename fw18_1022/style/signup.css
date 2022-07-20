@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+#loginbox{
+    height: auto;
+    width: 400px;
+   
+    margin: auto;
+    margin-top: 75px;
+    padding: 10px;
+}
+.l1{
+    font-size: 11px;
+}
+.labesheading{
+    font-size: 11px;
+    margin-top:10px;
+}
+.loginemail{
+    width: 380px;
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+
+}
+.loginemail>div{
+    height: 100%;
+    width: 33.33%;
+    
+    display: flex;
+    align-items: center;
+}
+.loginemail>div>p{
+    margin-left: 10px;
+}
+.continewbtn{
+    width: 384px;
+    height: 30px;
+    margin-top: 5px; 
+    background-color: #030303;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 11px;
+}
+.backbtn{
+    width: 380px;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+}
