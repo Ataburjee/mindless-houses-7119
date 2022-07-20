@@ -1,0 +1,1235 @@
+let llArr = [
+    'ALL CATEGORIES','ACCESSORIES','BAGS','CLOTHING','SHOES',
+
+    'ALL DESIGNERS','032c','1017 ALYX 9SM','11 by Boris Bidjan Saberi',
+    '132 5. ISSEY MIYAKE','3.1 Phillip Lim','3MAN','424',
+    '44 Label Group','4SDESIGNS','99% IS','A BETTER FEELING','A PERSONAL NOTE 73',
+    'A-COLD-WALL*','A. A. Spectrum','A.P.C.','AAPE by A Bathing Ape',
+    'Acne Studios','ACRONYM','ADER error','adidas Originals','adidas x Human Made',
+    'adidas x Humanrace by Pharrell','Williams','adidas x IVY PARK','Adieu',
+    'Advisory Board Crystals','ADYAR','AFFXWRKS','Afield Out','Agnona',
+    'Ahluwalia','Ahluwalia &PaulSmith','AïE','AIREI',"Aitor Throup's TheDSA",'Akoni',
+    'Alchemist','Alexander McQueen','Alighieri','AMBUSH','AMI Alexandre Mattiussi',
+    'Ann Demeulemeester','Another Aspect','APPLIED ART FORMS','Aries','Arnar Már Jónsson',
+    'ARTURO OBEGERO','Ashley Williams','Asics','ASPESI','AURALEE',
+    'Awake NY','Axel Arigato','Aztech Mountain','Balenciaga','Bally Hike',
+    'Balmain','Bao Bao Issey Miyake','BAPE','Barbour','Barena','Bather','BEAMS PLUS',
+'BED J.W. FORD',  
+'Belstaff',
+'Benjamin Edgar',
+'Bethany Williams',
+'Bianca Saunders',
+'Billionaire Boys Club',
+'Birkenstock',
+'Blackmerle',
+'Bless',
+'Bleue Burnham',
+'BLK DNM',
+'Bloke',
+'Bode',
+'ONNIE CLYDE',
+'Boramy Viguier',
+'Boris Bidjan Saberi',
+'Boss',
+'both',
+'Bottega Veneta',
+'Botter',
+'Brain Dead',
+'Brioni',
+'Brownstone',
+'Brunello Cucinelli',
+'BRYAN JIMENÈZ',
+'Burberry',
+'By Walid',
+'BYBORRE',
+'C.P. Company',
+'C2H4',
+'Calvin Klein Underwear',
+'CALVINLUO',
+'Camber USA',
+'Camiel Fortgens',
+'CamperLab',
+'Canada Goose',
+'Carhartt Work In Progress',
+'Carlota Barrera',
+'Carne Bollente',
+'CARSON WACH',
+'Cartier',
+'Casablanca',
+'Castañer',
+'CAYL',
+'CDLP',
+'CFCL',
+'Champion Reverse Weave',
+'Charles Jeffrey Loverboy',
+'Chemist Creations',
+'Chen Peng',
+'Chet Lo',
+'Children of the Discordance',
+'CHIMI',
+'Chin Teo',
+'Chopova Lowena',
+'Christian Louboutin',
+'Clarks Originals',
+'Clot',
+'CMMN SWDN',
+'Coach 1941',
+'Collina Strada',
+'Come Back as a Flower',
+'COMMAS',
+'Comme des Garçons Homme',
+'Comme des Garçons Homme Deux',
+'Comme des Garçons Homme Plus',
+'Comme des Garçons Play',
+'Comme des Garçons Shirt',
+'Comme des Garçons Wallets',
+'Commission',
+'Common Projects',
+'Completedworks',
+'Connor McKnight',
+'Converse',
+'Cornerstone',
+'Corridor',
+'Côte&Ciel',
+'COTTON CITIZEN',
+'Courrèges',
+'Cowgirl Blue Co',
+'Craig Green',
+'Crocs',
+'Cutler And Gross',
+'Dheygere',
+'Daniel W. Fletcher',
+'Danner',
+'Davi Paris',
+'De Bonne Facture',
+'Dear Letterman',
+'Denim Tears',
+'Descente ALLTERRAIN',
+'DEVÁ STATES',
+'DEVEAUX NEW YORK',
+'Diemme',
+'Diesel',
+'Dime',
+'Dion Lee',
+'District Vision',
+'Dita',
+'Dolce & Gabbana',
+'DOPPIAA',
+'Double Rainbouu',
+'Doublet',
+'Dr. Martens',
+
+'drew house',
+'Dries Van Noten',
+'Drôle De Monsieur',
+'Dsquared2',
+'Dunhill',
+'Eastwood Danso',
+'Eckhaus Latta',
+'EDEN power corp',
+'Edward Cuming',
+'EGONlab',
+'Eidos',
+'éliou',
+'Emanuele Bicocchi',
+'Endless Joy',
+'Enfants Riches Déprimés',
+'Engineered Garments',
+'Entire Studios',
+'Erdem',
+'ERL',
+'Ermenegildo Zegna',
+'Ermenegildo Zegna Couture',
+'Ernest W. Baker',
+'Essentials',
+'Etro',
+'Études',
+'Evisu',
+'extreme cashmere',
+'Eytys',
+'F-LAGSTUF-F',
+'Factor',
+'Faith Connexion',
+'FARIS',
+'FDMTL',
+'Fear of God',
+'Fendi',
+'Feng Chen Wang',
+'FLATLIST EYEWEAR',
+'Floyd',
+'FPM Milano',
+'FRAME',
+'Frédérique Constant',
+'Frenckenberger',
+'Fumito Ganryu',
+'Gabriela Hearst',
+'Garrett Leight',
+'GAUCHERE',
+'GCDS',
+'Gentle Fullness',
+'Georges Wendell',
+'Georgia Kemball',
+'Gianvito Rossi',
+'Gil Rodriguez',
+'Gimaguas',
+'Giorgio Armani',
+'Giuseppe Zanotti',
+'Givenchy',
+'GmbH',
+'Golden Goose',
+'Goldwin',
+'Good News',
+'Goodfight',
+'GR10K',
+'Gramicci',
+'Greg Lauren',
+'Grey Ant',
+'Gucci',
+'Guidi',
+'Haider Ackermann',
+'Hannah Jewett',
+'HANREJ',
+'HARAGO',
+'Harmony',
+'Harris Wharf London',
+'Hatton Labs',
+'Hed Mayner',
+'HELIOT EMIL',
+'Helmut Lang',
+'Henrik Vibskov',
+'Herno',
+'Heron Preston',
+'Heron Preston for Calvin Klein',
+'HH-118389225',
+'Holden',
+'Holubar',
+'Homme Plissé Issey Miyake',
+'Honey Fucking Dijon',
+'Hood by Air',
+'HOPE',
+'House of the Very Islands',
+'Hugo',
+'Human Recreational Services',
+'Husbands',
+'ICECREAM',
+'illesteva',
+'IN GOLD WE TRUST PARIS',
+'Innerraum',
+'Isabel Benenato',
+'Isabel Marant',
+'Isaia',
+'Izzue',
+'J.Hannah',
+'Jacquemus',
+'JACQUES',
+'JACQUES MARIE MAGE',
+'Jam',
+'Jan-Jan Van Essche',
+'Jean Paul Gaultier',
+'JERIH',
+'JieDa',
+'Jil Sander',
+'JiyongKim',
+'John Elliott',
+'Johnlawrencesullivan',
+'Judy Turner',
+'Julius',
+'Junya Watanabe',
+'Just Cavalli',
+'Juun.J',
+'JW Anderson',
+'Kanghyuk',
+'Kanuk',
+'KARA',
+'Karu Research',
+'KASSL Editions',
+'Keenkee',
+'Kenzo',
+'KIDILL',
+'Kids Worldwide',
+'KidSuper',
+'Kiko Kostadinov',
+'King & Tuckfield',
+'Klättermusen',
+'Ksubi',
+'Kuboraum',
+'Kuro',
+'KUSIKOHC',
+'LHomme Rouge',
+'Label Under Construction',
+'Labrum',
+'Lacoste',
+'Lady White Co.',
+'Landlord',
+'Lanvin',
+'Le Gramme',
+'LE17SEPTEMBRE',
+'Lemaire',
+'Les Tien',
+
+'Levis Made & Crafted',
+'Levis Vintage Clothing',
+'Lexxola',
+'Li-Ning',
+'Liam Hodges',
+'Liberal Youth Ministry',
+'LINDA FARROW',
+'Loewe',
+'Lorette Colé Duprat',
+'LUU DAN',
+'Luar',
+'Ludovic de Saint Sernin',
+'Lukhanyo Mdingi',
+'Lunetterie Générale',
+'M.A. Martin ',
+'Mackage',
+'Mackintosh',
+'Magliano',
+'Mainline:RUS/Fr.CA/DE',
+'Maison Kitsuné',
+'Maison Margiela',
+'Malibu Sandals',
+'Manors Golf',
+'Marc Jacobs',
+'Marc Jacobs Heaven',
+'Marcelo Burlon County of Milan',
+'Margaret Howell',
+'Marine Serre',
+'Marni',
+'Marsèll',
+'Marshall Columbia',
+'Martin Asbjørn',
+'Martine Ali',
+'Martine Rose',
+'Maryam Nassir Zadeh',
+'Massimo Alba',
+'Master-Piece Co',
+'mastermind JAPAN',
+'mastermind WORLD',
+'Matsuda',
+'Max Mara',
+'Maximilian Davis',
+'MCQ', 
+'Merrell 1TRL',
+'Meta Campania Collective',
+'mfpen',
+'MHL by Margaret Howell',
+'Miharayasuhiro',
+'MISBHV',
+'Missoni',
+'Missoni Sport',
+'MM6 Maison Margiela',
+'Molly Goddard',
+'Moncler',
+'Moncler Genius',
+'Moncler Grenoble',
+'Moose Knuckles x Eckhaus Latta',
+'Moschino',
+'Moussy Vintage',
+'Mowalola',
+'Mr. Saturday',
+'MSGM',
+'Mugler',
+'Museum of Peace & Quiet',
+'N.Hoolywood',
+'Nahmias',
+'Naked & Famous Denim',
+'Namacheko',
+'NAMESAKE',
+'Nanamica',
+'Nanushka',
+'NAPA by Martine Rose',
+'Native Sons',
+'NEEDLES',
+'Neighborhood',
+'Neil Barrett',
+'NEMEN®',
+'New Balance',
+'Nicholas Daley',
+'Nike Jordan',
+'NN07',
+'Noah',
+'Nobis',
+'NOMA t.d.',
+'non',
+'Noon Goons',
+'Norda',
+'Norse Projects',
+'NotSoNormal',
+'Nudie Jeans',
+'Numbering',
+'Oakley',
+'OAMC',
+'Off-White',
+'Officine Creative',
+'Officine Générale',
+'Oliver Peoples',
+'On',
+'Online Ceramics',
+'Opening Ceremony',
+'Ostrya',
+'Ottolinger',
+'Our Legacy',
+'Outdoor Voices',
+'OVERCOAT',
+'Paco Rabanne',
+'Palm Angels',
+'PALMER',
+'Palmes',
+'Paloma Wool',
+'Palomo Spain',
+'Panconesi',
+'PANGAIA',
+'PARADIS PERDUS',
+'Parajumpers',
+'paria /FARZANEH',
+'Pas Normal Studios',
+'Paul Smith',
+'Paul Smith + Christoph Niemann',
+'Paul Smith 50th Anniversary',
+'Paul Stuart',
+'Pearls Before Swine',
+'PEdALED',
+'Persol',
+'Peter Do',
+'Phileo',
+'PHIPPS',
+'Phlemuns',
+'Pierre Hardy',
+'Polo Ralph Lauren',
+'Port Tanger',
+'Post Archive Faction (PAF)',
+'Praying',
+'PRESIDENTs',
+'PROJEKT PRODUKT',
+'PS by Paul Smith',
+'Psychworld',
+'Pyer Moss',
+'Quiet Golf',
+'R13',
+'RAEN',
+'Raf Simons',
+'rag & bone',
+'RAINS',
+'Ralph Lauren Purple Label',
+'RANDT',
+'Rassvet',
+'RÄTHEL & WOLF',
+'Ray-Ban',
+'Recto',
+'Red Wing Heritage',
+'Reebok by Pyer Moss',
+'Reebok Classics',
+'Reese Cooper',
+'Remi Relief',
+'RETROSUPERFUTURE',
+'Rhude',
+'Rick Owens',
+'Rick Owens Drkshdw',
+'Ring Jacket',
+'rito structure',
+'RK',
+'RLX Ralph Lauren',
+'ROA',
+'Rochambeau',
+'Rochas Homme',
+'ROGIC',
+'Rombaut',
+'RRL',
+'s.k. manor hill',
+'S.S.Daley',
+'sacai',
+'Saint Laurent',
+'Saintwoods',
+'Salie 66',
+'Salomon',
+'Salvatore Ferragamo',
+'Sankuanz',
+'Santangelo',
+'Santoni',
+'Sasquatchfabrix.',
+'Satisfy',
+'Satta',
+'Saturdays NYC',
+'Saul Nash',
+'SC103',
+'Schnayderman',
+'Schott',
+'Sean Suen',
+'Sebago',
+'Sebastien Ami.',
+'Sébline',
+'Second/Layer',
+'SEEKINGS',
+'Séfr',
+'Serapis',
+'Sergio Tacchini',
+'Shinola',
+'Sies Marjan',
+'Situationist',
+'Sky High Farm Workwear',
+'Smythson',
+'Snow Peak',
+'Soar Running',
+'Solid & Striped',
+'Solid Homme',
+'Sophie Buhai',
+'Soulland',
+'South2 West8',
+'SPENCER BADU',
+'Sporty & Rich',
+'SSENSE WORKS',
+'St-Henri',
+'Stay Made',
+'Stefan Cooke',
+'Stella McCartney',
+'Stockholm (Surfboard) Club',
+'Stolen Girlfriends Club',
+'Stone Island',
+'Stone Island Shadow Project',
+'Story mfg.',
+'Stray Rats',
+'Stüssy',
+'Stutterheim',
+'SUBU',
+'Suicoke',
+'Sulvam',
+'Sunflower',
+'Sunnei',
+'Sunspel',
+'SWEETLIMEJUICE',
+'System',
+'Taiga Takahashi',
+'TAION',
+'TAKAHIROMIYASHITA TheSoloist',
+'Tanaka',
+'Tanner Fletcher',
+'Tekla',
+'Ten c',
+'Teva',
+'Thames MMXX.',
+'The Conspires',
+'The Elder Statesman',
+'The Farmers Market Global',
+'The North Face',
+'The Row',
+'The Very Warm',
+'The Viridi-anne',
+'THEBE MAGUGU',
+'Theophilio',
+'Theory',
+'Thierry Lasry',
+'thisisneverthat',
+'Thom Browne',
+'Tibi',
+'Tiger of Sweden',
+'Tiger of Sweden Jeans',
+'Toga Virilis',
+'Tokyo James',
+'TOM FORD',
+
+'UNIFORME',
+'Valentino',
+'Valentino Garavani',
+'Vans',
+'VEERT',
+'Veilance',
+'VEJA',
+'Vejas Maksimas',
+'Versace',
+'Versace Jeans Couture',
+'Versace Underwear',
+'VETEMENTS',
+'Vince',
+'Virón',
+'Visvim',
+'VITELLI',
+'VIVENDII',
+'Vivienne Westwood',
+'VTMNTS',
+'Vyner Articles',
+'WACKO MARIA',
+'Wales Bonner',
+'WARDROBE.NYC',
+'We11done',
+'Wekaforé',
+'WESTERN HYDRODYNAMIC RESEARCH',
+'White Mountaineering',
+'Who Decides War by MRDR BRVDO',
+'Winnie New Yor',
+'Wolford',
+'Won Hundred',
+'Wood Wood',
+'Wooyoungmi',
+'WWW.WILLSHOTT',
+'Xander Zhou',
+'XLIM',
+'Y-3',
+'Y/Project',
+'YMC',
+'Yohji Yamamoto',
+'Youths in Balaclava',
+'Yuichi Toyama',
+'Yuki Hashimoto',
+'Yves Salomon',
+'Yves Salomon - Army',
+'Z Zegna',
+'ZAYN x ARNETTE',
+'ZEGNA',
+]
+
+for(let i=0 ;i<llArr.length ;i++){
+    let div = document.createElement('div')
+    div.innerText = llArr[i]
+    if(i===0 || i === 5){
+        div.style.fontWeight = "900"
+        div.style.margin = "10px 0 10px 0"
+        div.style.textDecoration = "underline"
+    }else if(i===0){
+        div.style.fontWeight = "900"
+    }else if(i===1){
+        div.addEventListener("click",function(){
+            sortAcc()
+        })
+    }
+    document.querySelector("#left").append(div)
+}
+
+rArr = [
+    'SORT',
+'Latest arrivals',
+'Trending',
+'Price: Low to high',
+'Price: High to low',
+'COLORS',
+'ALL COLORS',
+'Black',
+'Blue',
+'Brown',
+'Burgundy',
+'Gray',
+'Green',
+'Navy',
+'Orange',
+'Pink',
+'Purple',
+'Red',
+'Tan',
+'White',
+'Yellow',
+]
+
+for(let i=0 ;i<rArr.length ;i++){
+    let div = document.createElement('div')
+    div.innerText = rArr[i]
+    if(i===0 || i===5){
+        div.style.fontSize = "12px"
+        div.style.fontWeight = "900"
+        div.style.textDecoration = 'underline'
+        div.style.margin = '10px 0 10px 0'
+    }else if(i===3){
+        div.addEventListener("click",function(){
+            lthFun()
+        })
+    }else if(i===4){
+        div.addEventListener("click",function(){
+            htlFun()
+        })
+    }
+    else if(i===2){
+        div.addEventListener("click",function(){
+            trendingFun()
+        })
+    }
+    else if(i===1){
+        div.addEventListener("click",function(){
+            latestArrivalFun()
+        })
+    }
+    div.style.marginLeft = '30px'
+    document.querySelector("#right").append(div)
+}
+
+
+
+
+
+
+prArr = [
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.0/221525M196010_1/husbands-ssense-exclusive-off-white-linen-suit.jpg',
+        name:'SSENSE Exclusive Off-White Linen',
+        brand:'HUSBANDS',
+        price:2010,
+        id:'a',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221525M195013_1/husbands-ssense-exclusive-black-linen-blazer.jpg',
+        name:'SSENSE Exclusive black-White Linen',
+        brand:'HUSBANDS',
+        price:1495,
+        id:'b',
+        type:'shirt',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/221525M191003_1/husbands-ssense-exclusive-gray-wool-trousers.jpg',
+        name:'SSENSE Exclusive black-White Linen',
+        brand:'HUSBANDS',
+        price:630,
+        id:'c',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191006_1/acne-studios-beige-workwear-trousers.jpg',
+        name:'Beige Workwear Trousers',
+        brand:'ACNE STUDIOS',
+        price:300,
+        id:'d',
+        type:'pant',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138012_1/acne-studios-brown-ribbed-beanie.jpg',
+        name:'Brown Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:135,
+        id:'e',
+        type:'hat'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138007_1/acne-studios-brown-ribbed-beanie.jpg',
+        name:'Brown Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:125,
+        id:'f',
+        type:'hat',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138014_1/acne-studios-beige-ribbed-beanie.jpg',
+        name:'Brown Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:135,
+        id:'g',
+        type:'hat',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191007_1/acne-studios-black-workwear-trousers.jpg',
+        name:'Black Ribbed trousers',
+        brand:'ACNE STUDIOS',
+        price:300,
+        id:'h',
+        type:'pant',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M175000_1/acne-studios-black-organic-cotton-bomber-jacket.jpg',
+        name:'Black Organic Ribbed Beanie jacket',
+        brand:'ACNE STUDIOS',
+        price:545,
+        id:'i',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M180001_1/acne-studios-beige-unlined-suit-blazer.jpg',
+        name:'Belge untitled blazer',
+        brand:'ACNE STUDIOS',
+        price:465,
+        id:'j',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138024_1/acne-studios-yellow-cable-knit-beanie.jpg',
+        name:'Yellow Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:155,
+        id:'k',
+        type:'hat',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138015_1/acne-studios-green-ribbed-beanie.jpg',
+        name:'green Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:135,
+        id:'l',
+        type:'hat',
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M138025_1/acne-studios-gray-kubens-beanie.jpg',
+        name:'grey Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:145,
+        id:'m',
+        type:'hat'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M140000_1/acne-studios-black-embroidered-bucket-hat.jpg',
+        name:'Black Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:125,
+        id:'n',
+        type:'hat'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M140001_1/acne-studios-blue-embroidered-bucket-hat.jpg',
+        name:'Blue Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:125,
+        id:'o',
+        type:'hat'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M180002_1/acne-studios-orange-checkered-shirt.jpg',
+        name:'Orange Color Ribbed shirt',
+        brand:'ACNE STUDIOS',
+        price:465,
+        id:'p',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M180009_1/acne-studios-beige-organic-cotton-coat.jpg',
+        name:'Blege Organic Cotton Coat',
+        brand:'ACNE STUDIOS',
+        price:605,
+        id:'q',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M192016_1/acne-studios-blue-button-up-shirt.jpg',
+        name:'Khaki Casual Trouser',
+        brand:'ACNE STUDIOS',
+        price:280,
+        id:'r',
+        type:'shirt',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191013_1/acne-studios-black-wool-tailored-trousers.jpg',
+        name:'Black Wool weanie Trousers',
+        brand:'ACNE STUDIOS',
+        price:330,
+        id:'s',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191009_1/acne-studios-brown-fan-print-trousers.jpg',
+        name:'Brown Fan Print',
+        brand:'ACNE STUDIOS',
+        price:365,
+        id:'t',
+        type:'pant',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M190004_1/acne-studios-pink-wide-leg-sweatpants.jpg',
+        name:'Pink Wide-Leg Sweterpants',
+        brand:'ACNE STUDIOS',
+        price:330,
+        id:'u',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M192029_1/acne-studios-brown-print-shirt.jpg',
+        name:'Green Print Shirts',
+        brand:'ACNE STUDIOS',
+        price:385,
+        id:'v',
+        type:'shirt',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191025_1/acne-studios-navy-casual-suit-trousers.jpg',
+        name:'Nvay BlueRibbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:425,
+        id:'w',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M186047_1/acne-studios-blue-1996-straight-fit-jeans.jpg',
+        name:'Blue 1996 Straight Fit Jeans',
+        brand:'ACNE STUDIOS',
+        price:310,
+        id:'x',
+        type:'pant',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191030_1/acne-studios-navy-casual-trousers.jpg',
+        name:'Navy Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:280,
+        id:'y',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M193003_1/acne-studios-blue-sweat-shorts.jpg',
+        name:'Black Ribbed Beanie',
+        brand:'ACNE STUDIOS',
+        price:138,
+        id:'z',
+        type:'pant',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M193011_1/acne-studios-black-sweat-shorts.jpg',
+        name:'Black RSweat Shorts',
+        brand:'ACNE STUDIOS',
+        price:225,
+        id:'aa',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M213082_1/acne-studios-green-mock-neck-t-shirt.jpg',
+        name:'Green Mock Neak T-Shirt',
+        brand:'ACNE STUDIOS',
+        price:145,
+        id:'ab',
+        type:'shirt',
+        trending:true
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M176008_1/homme-plisse-issey-miyake-khaki-flip-jacket.jpg',
+        name:'Khaki Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:775,
+        id:'ac',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M180018_1/homme-plisse-issey-miyake-black-flip-jacket.jpg',
+        name:'Black Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:775,
+        id:'ad',
+        type:'shirt',
+        trending:"yes"
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191098_1/homme-plisse-issey-miyake-yellow-tailored-pleats-1-shorts.jpg',
+        name:'Khaki Flip Shorts',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:255,
+        id:'ae',
+        type:'pant',
+        trending:"yes"
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191099_1/homme-plisse-issey-miyake-black-tailored-pleats-1-shorts.jpg',
+        name:'Black Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:265,
+        id:'af',
+        type:'pant',
+        trending:"yes"
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191102_1/homme-plisse-issey-miyake-yellow-tailored-pleats-1-trousers.jpg',
+        name:'Yellow Flip Trousers',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:265,
+        id:'ag',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191103_1/homme-plisse-issey-miyake-blue-tailored-pleats-1-trousers.jpg',
+        name:'Blue Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:265,
+        id:'ah',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191100_1/homme-plisse-issey-miyake-gray-tailored-pleats-1-shorts.jpg',
+        name:'Grey Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:255,
+        id:'ai',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191105_1/homme-plisse-issey-miyake-off-white-bow-trousers.jpg',
+        name:'Off-White Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:415,
+        id:'aj',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191104_1/homme-plisse-issey-miyake-black-pastel-stripe-trousers.jpg',
+        name:'Black Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:400,
+        id:'ak',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191107_1/homme-plisse-issey-miyake-yellow-bow-trousers.jpg',
+        name:'Yellow Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:315,
+        id:'al',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191106_1/homme-plisse-issey-miyake-gray-bow-trousers.jpg',
+        name:'Grey Flip Trousers',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:315,
+        id:'am',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M195010_1/homme-plisse-issey-miyake-black-tailored-pleats-1-blazer.jpg',
+        name:'Black Flip Blzer',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:530,
+        id:'an',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M195005_1/homme-plisse-issey-miyake-yellow-tailored-pleats-1-blazer.jpg',
+        name:'Yellow Flip Blzer',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:530,
+        id:'ao',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M195004_1/homme-plisse-issey-miyake-gray-tailored-pleats-1-blazer.jpg',
+        name:'Grey Flip Blzer',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:530,
+        id:'ap',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M195006_1/homme-plisse-issey-miyake-blue-tailored-pleats-1-blazer.jpg',
+        name:'Blue Tailored Pleats 1 Blazer',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:320,
+        id:'aq',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M191109_1/homme-plisse-issey-miyake-multicolor-pastel-stripe-trousers.jpg',
+        name:'Multicolor Flip pants',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:400,
+        id:'ar',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M213036_1/homme-plisse-issey-miyake-yellow-monthly-color-july-t-shirt.jpg',
+        name:'Yellow Flip T-Shirt',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:175,
+        id:'as',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M213038_1/homme-plisse-issey-miyake-yellow-release-t-1-t-shirt.jpg',
+        name:'Yolowised Flip Jacket',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:135,
+        id:'at',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M213037_1/homme-plisse-issey-miyake-gray-release-t-1-t-shirt.jpg',
+        name:'Grey Monthly Color July T-Shirt',
+        brand:'HOMME PLISSÉ ISSEY MIYAKE',
+        price:145,
+        id:'au',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M190005_1/hugo-hugo-boss-green-danks-lounge-pants.jpg',
+        name:'Green Danks Lounge Pants',
+        brand:'HUGO',
+        price:155,
+        id:'av',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M190020_1/hugo-hugo-boss-blue-doak-lounge-pants.jpg',
+        name:'Navy Danks Lounge Pants',
+        brand:'HUGO',
+        price:125,
+        id:'aw',
+        type:'pant'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M192005_1/hugo-hugo-boss-beige-eddies-shirt.jpg',
+        name:'Beige Eddies Shirt',
+        brand:'HUGO',
+        price:150,
+        id:'ax',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M202018_1/hugo-hugo-boss-black-mr-bathing-ape-edition-hoodie.jpg',
+        name:'Black nMr. Eddies Shirt',
+        brand:'HUGO',
+        price:360,
+        id:'ay',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M204002_1/hugo-hugo-boss-black-dalker-sweatshirt.jpg',
+        name:'Beige Eddies Shirt',
+        brand:'HUGO',
+        price:130,
+        id:'az',
+        type:'shirt'
+    },
+    {
+        image:'Black Daffron Long Sleeve T-Shirt',
+        name:'Black Eddies Shirt',
+        brand:'HUGO',
+        price:150,
+        id:'aaa',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M192014_1/hugo-hugo-boss-white-ermann-shirt.jpg',
+        name:'White Emman Eddies Shirt',
+        brand:'HUGO',
+        price:105,
+        id:'aab',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M213001_1/hugo-hugo-boss-white-delectric-t-shirt.jpg',
+        name:'White Delectric T-Shirt',
+        brand:'HUGO',
+        price:80,
+        id:'aac',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M213003_1/hugo-hugo-boss-white-cotton-t-shirt.jpg',
+        name:'White Cotton T-Shirt',
+        brand:'HUGO',
+        price:75,
+        id:'aad',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M213031_1/hugo-hugo-boss-white-mr-bathing-ape-edition-logo-t-shirt.jpg',
+        name:'White Mr. Bathing Delectric T-Shirt',
+        brand:'HUGO',
+        price:130,
+        id:'aae',
+        type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222769M165011_1/frandeacutedandeacuterique-constant-black-classics-index-automatic-watch.jpg',
+        name:'Black Classics Index Automatic Watch',
+        brand:'FREDERIQUE CONSTANT',
+        price:1300,
+        id:'aaF',
+        type:'watch'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222769M165016_1/frandeacutedandeacuterique-constant-silver-and-navy-classics-quartz-watch.jpg',
+        name:'Silver & Navy Classics Index Watch',
+        brand:'FREDERIQUE CONSTANT',
+        price:1055,
+        id:'aag',
+        type:'watch'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M134060_1/bottega-veneta-gold-1107-sunglasses.jpg',
+        name:'Black 1107 Sunglasses',
+        brand:'BOTTEGA VENETA',
+        price:400,
+        id:'aah',
+        type:'eyewear'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M133000_1/bottega-veneta-black-aviator-glasses.jpg',
+        name:'Gold 1107 Sunglasses',
+        brand:'BOTTEGA VENETA',
+        price:360,
+        id:'aai',
+        type:'eyewear'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222331M134003_1/cutler-and-gross-tortoiseshell-1328-sunglasses.jpg',
+        name:'Torsell 1328 Sunglasses',
+        brand:'VUTTLER & GROSS',
+        price:360,
+        id:'aaJ',
+        type:'eyewear'
+    },
+]
+
+
+let midProducts = (data) => {
+
+    let cont = document.getElementById("mid_grid")
+    cont.innerHTML = null
+    data.forEach( (el) => {
+        let div = document.createElement('div')
+
+        let img = document.createElement('img')
+        img.src = el.image
+
+        let name = document.createElement('p')
+        name.innerText = `Name : ${el.name}`
+
+        let brand = document.createElement('p')
+        brand.innerText = `Brand : ${el.brand}`
+
+        let price = document.createElement('p')
+        price.innerText = `Price : $ ${el.price}`
+
+        div.append(img, name, brand, price)
+        cont.append(div)
+    })
+}
+
+midProducts(prArr)
+
+function lthFun(){
+    let filter = prArr.sort(function(a,b){
+        return a.price < b.price ? -1 : 1;
+    })
+    console.log(filter)
+    midProducts(filter)
+    
+}
+
+function htlFun(){
+    let filter = prArr.sort(function(a,b){
+        return a.price < b.price ? 1 : -1;
+    })
+    console.log(filter)
+    midProducts(filter)
+    
+}
+function trendingFun(){
+    let filter = prArr.filter(function(el){
+        return el.trending === true ;
+    })
+    console.log(filter)
+    midProducts(filter)
+    
+}
+function latestArrivalFun(){
+    let filter = prArr.filter(function(el){
+        return el.trending === 'yes' ;
+    })
+    console.log(filter)
+    midProducts(filter)
+    
+}
+
+function sortAcc(){
+    
+}
