@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+#navbar{
+    position:fixed;
+    top: 0px;
+    height:auto ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+#inernav{
+    height: 55px;
+    width:93% ;
+    margin: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+#pagelinks{
+    height: 100%;
+    width: 40%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 20px;
+
+}
+#pagelinks>a{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+}
+.serchbutton{
+    background-color: #fff;
+    border:none;
+    font-size: 11px;
+}
+
+#main_logo{
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#main_logo>a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+#other_nav_vontent{
+    height: 100%;
+    width: 40%;
+   
+    display: flex;
+align-items: center;
+justify-content:flex-end;
+}
+#other_nav_vontent>a{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    margin-left: 20px;
+}
+#other_nav_vontent>a:hover,#pagelinks>a:hover{
+text-decoration: underline;
+}
+
+.modal {
+    
+  display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* Location of the box */
+    left:50px;
+    top:55px;
+    width: 450px; /* Full width */
+    height: 150px; /* Full height */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    border: 1px solid #888;
+}
+.close {
+    color: #030303;
+    float: right;
+    font-size:11px;
+    font-weight: bold;
+}
+#sertop{
+    height:50px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+#sertop>a{
+    margin-left: 20px;
+text-decoration: none;
+font-size: 11px;
+color: #030303;
+}
+#serchmid{
+    height:50px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+}
+#serchmid>input{
+    height: 43px;
+    width: 350px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+
+}
+#searchicon{
+    height: 35px;
+    width: 35px;
+    margin-left:-45px ;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#searchbottom{
+    height:50px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 11px;
+    padding-left: 20px;
+}
+#colsebtn{
+    width: 60px;
+    margin-left: 10px;
+    font-size: 11px;
+    display: flex;
+    background-color: #fff;
+    border: none;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+}
+
+
+/*Fotter part*/
+
+#fotter{
+    height: 75px;
+    width: 100%;
+
+    position: absolute;
+    top: 100%;
+}
+#innerfotter{
+height: 65px;
+width: 80%;
+margin: auto;
+background-color: #fff;
+
+}
+#aboutcompny{
+height: 50%;
+width: 100%;
+
+display: flex;
+align-items: center;
+
+}
+#aboutcompny>a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #030303;
+    margin-left: 20px;
+}
+#aboutcompny>a:hover{
+    text-decoration: underline;
+}
+#soical-media-icons{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#fotterbotom{
+    height: 35px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+#fotterbotom>a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #424141;
+}

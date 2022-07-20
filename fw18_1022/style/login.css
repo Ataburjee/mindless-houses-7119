@@ -1,0 +1,32 @@
+
+/* cs for login*/
+
+#loginbox{
+    height: 200px;
+    width: 400px;
+   
+    margin: auto;
+    margin-top: 75px;
+    padding: 10px;
+}
+.l1{
+    font-size: 11px;
+}
+.labesheading{
+    font-size: 11px;
+    margin-top:10px;
+}
+#loginemail{
+    width: 380px;
+    height: 30px;
+    margin-top: 5px;
+}
+.continewbtn{
+    width: 384px;
+    height: 30px;
+    margin-top: 5px; 
+    background-color: #030303;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 11px;
+}
