@@ -1,0 +1,50 @@
+#bogbody{
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: aquamarine;
+  
+  
+}
+#emptybag{
+    height: 200px;
+    width: 50%;
+    margin: auto;
+  
+}
+#em_heading{
+    height: 30px;
+    width: 100%;
+   
+}
+#em_heading>p{
+    font-size: 11px;
+}
+#em_alert{
+    height:40px;
+    width: 100%;
+
+}
+#em_alert{
+    font-size: 11px;
+}
+#em_pagedirectors{
+    height: 50px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#em_pagedirectors>button{
+    height: 37px;
+    width: 205px;
+   
+    background-color: black;
+}
+#em_pagedirectors>button>a{
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
