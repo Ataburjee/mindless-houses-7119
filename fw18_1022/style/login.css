@@ -30,3 +30,11 @@
     margin-top: 20px;
     font-size: 11px;
 }
+#loginpass{
+    width: 380px;
+    height: 30px;
+    margin-top: 5px;
+}
+#displaypass{
+    display: none;
+}

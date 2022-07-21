@@ -12,7 +12,6 @@ closebtn.addEventListener("click",function(){
     closebox()
 })
 
-
 function openserchbox(){
     let mysearchbox=document.getElementById("mysearchbox")
     mysearchbox.style.display="block"
@@ -24,22 +23,15 @@ function closebox(){
 }
 
 
-//day 3 updates:-
-let creatacount=document.getElementById("create_account")
-creatacount.addEventListener("click",function(event){
-    creat_acount(event)
-})
-
-var arr=JSON.parse(localStorage.getItem("User"))
-
-function  creat_acount(event){
-event.preventDefault()
-let user={
-    "email":document.getElementById("signupmail").value,
-    "password":document.getElementById("signuppass").value,
-}
-
-localStorage.setItem("User",JSON.stringify(user))
-console.log(user)
-
-}
+var arr=[]
+let my_shopingbag=document.getElementById("bogbody")
+//if(arr.length===0){
+//    my_shopingbag.innerHTML=`<div id="emptybag"> 
+//    <div id="em_heading"><p>SHOPPING BAG</p> </div>
+//    <div id="em_alert"><p>Your shopping bag is empty</p></div>
+//    < id="em_pagedirectors">
+//        <button><a href="">SHOP MENSWERE </a></button>
+//        <button><a href="">SHOP WOMENSWEAR</a></button>
+//        <button><a href="">SHOP EVERYTHING ELSE</a></button><///div>
+//   </div>`
+//}
