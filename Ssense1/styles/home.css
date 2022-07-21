@@ -1,0 +1,564 @@
+#main-block{
+    /* border:1px solid black; */
+    width:100%;
+    height:585px;
+    display: flex;
+    justify-content: center;
+    gap:60px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#blockPic-1{
+    height:585px;
+    width:600px;
+    /* border:1px solid red; */
+}
+#blockPic-2{
+    height:585px;
+    width:600px;
+    /* border:1px solid red; */
+}
+
+.imgBlock{
+    width:100%;
+    height:410px;
+}
+#paraHead{
+    display: flex;
+    gap:40px;
+    margin-top: 6px;
+    align-items: center;
+  
+}
+#paraHead>h4{
+    font-size: 15px;
+    color:#8f8d8d;
+    letter-spacing: -0.003125rem;
+    font: lighter normal 0.9375rem/1.125rem;
+  
+
+}
+.its_span{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#div-paraHead>p{
+    font: 20px;
+    color:#333333;
+    /* line-height: 15px; */
+    font-size: 20px;
+    font-weight: 400;
+    margin:0px;
+    margin-top: 4.5px;
+    font-family: 'Poppins', sans-serif
+   
+}
+
+#middleSectionImg{
+    /* border:2px solid red; */
+    width:100%;
+    height:760px;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.img1Div{
+    /* border:1px solid green; */
+    width:29%;
+}
+#middleSectionImg>div>img{
+    height:600px;
+    width:100%;
+}
+
+#middlePicWriteup{
+    display: flex;
+    gap:27px;
+    margin-top: 8px;
+    align-items: center;
+}
+#middlePicWriteup>h4{
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -0.003125rem;
+    /* color:#333333; */
+}
+.RecentWrtiteup>span{
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font: lighter normal 1.1875rem;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+   line-height: 30px;
+}
+
+#dateTime{
+   letter-spacing: 1px;
+   margin-top: 2.5px;
+   -webkit-tap-highlight-color: rgba(106, 104, 104, 0);
+   font-family: 'Poppins', sans-serif;
+   margin-left: 90px;
+   font-family: 'Noto Sans', sans-serif;
+   color:#333333;
+   font-size: 14px;
+}
+.GoodDay{
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font: lighter normal 1.1875rem;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+   line-height: 30px;
+}
+#dateTime2{
+    letter-spacing: 1px;
+    margin-top: 2.5px;
+    -webkit-tap-highlight-color: rgba(106, 104, 104, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 90px;
+    font-family: 'Noto Sans', sans-serif;
+    color:#333333;
+    font-size: 14px;
+ }
+ .GoodDay-3{
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font: lighter normal 1.1875rem;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+   line-height: 30px;
+ }
+
+ #dateTime3{
+    letter-spacing: 1px;
+    margin-top: 2.5px;
+    -webkit-tap-highlight-color: rgba(106, 104, 104, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 90px;
+    font-family: 'Noto Sans', sans-serif;
+    color:#333333;
+    font-size: 14px;
+ }
+
+ #Shoes-middle-section{
+    /* border:1px solid black; */
+    width:100%;
+    height:585px;
+    display: flex;
+    justify-content: center;
+    gap:60px;
+ }
+
+ .ShoesDiv-1-2{
+    height:585px;
+    width:600px;
+    /* border:1px solid blue; */
+ }
+
+ #Shoes-middle-section>div>img{
+    width:100%;
+    height:440px;
+    /* border:1px solid black; */
+ }
+ #Feature{
+    display: flex;
+    gap:40px;
+    margin-top: 6px;
+    align-items: center;
+ }
+ .its_Adidasspan{
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 500;
+    line-height: 20px;
+ }
+ #Feature>h4{
+    color:#393939;
+    font-size: 14px;
+    line-height: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+ }
+ #div-ShopMV-anchor{
+    width:28%;
+    height:40px;
+    border:1px solid #979494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 8px;
+ }
+ a{
+    text-decoration: none;
+    color:#1b1b1b;
+    font-size: 14px;
+ }
+
+
+                               /* FIVE-DISPLAY-BLOCK        */
+ #fiveDisplayBox{
+    height:220px;
+    width:95%;
+    margin:auto;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: start;
+    justify-content: center;
+    gap:25px;
+
+ }
+ .div-five{
+    border:1px solid rgb(131, 130, 130);
+    height:170px;
+    width:350px;
+    border-left: none;
+    border-right: none;
+ }
+ .SameDisplayBlock{
+    display: block;
+    margin-top: 10px;
+    
+ }
+ .SameDisplayBlock>h4{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+ }
+ #stories{
+    font-size: 14.25px;
+    margin-top: 10px;
+    font-weight: 100;
+ }
+
+
+                           /* FIVE-DISPLAY-BLOCK-2,3,4,5 */
+ .DIsplayFlex4{
+    display: flex;
+    /* border:1px solid blue; */
+    height:150px;
+    width:270px;
+    margin-top: 10px;
+    gap:10px;
+    
+ }
+ .kkkkBore{
+    display: block;
+
+   
+ }
+ #img-4-display{
+    width:100px;
+    height:148px;
+    /* border:2px solid red; */
+ }
+
+ .fashionSense>label{
+    font-size: 15px;
+    color:#393939;
+    font-weight: 500;
+    text-align-last: end;
+ }
+ .kkkkBore>h4{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color:#272626;
+    font-weight: 500;
+ }
+#imgbX3-display{
+    width:100px;
+    height:148px;
+    /* border:2px solid red; */
+}
+
+.fashionSense-3>label{
+    font-size: 15px;
+    color:#393939;
+    font-weight: 500;
+ }
+ .DIsplayFlex4>div>img{
+    width:100px;
+    height:148px;
+ }
+ #five-5>label{
+    margin-top: 50%;
+ }
+                              /* MIDDLE-SECTION-2 */
+
+#middleSection-2{
+    height:800px;
+    width:95%;
+    margin:auto;
+    /* border:1px solid green; */
+    display: flex;
+    gap:30px;
+}                              
+
+#largeBoxMiddleSection{
+    /* border:1px solid blue; */
+    height:680px;
+    width:80%;
+}
+.MiddleLoadDivs-1{
+    height:320px;
+    width:100%;
+    /* border:1px solid rgb(127, 145, 25); */
+    display: block;
+}
+.MiddleLoadDivs-2{
+    height:320px;
+    width:100%;
+    /* border:1px solid rgb(127, 145, 25); */
+    display: block;
+    margin-top: 30px;
+}
+.testing-div{
+    display: flex;
+    gap:10px;
+    
+}
+#Khan-box-1{
+    width:50%;
+    height:320px;
+    /* border:2px solid brown; */
+}
+#Khan-box-2{
+    width:50%;
+    height:320px;
+    /* border:2px solid brown; */
+    display: block;
+}
+
+.testing-div>div>img{
+    width:100%;
+    height:320px;
+}
+.testing-div>div>h4{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+}
+.testing-div>div>label{
+    font-size: 14px;
+    color:#393939;
+}
+.testing-div>div>p{
+    font-size: 20px;
+    margin: 20px 0px;
+    color:#595858;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+  
+}
+#SmallBoxMiddleSection{
+    /* border:1px solid rgb(108, 108, 179); */
+    height:700px;
+    width:50%;
+    display: flex;
+    gap:30px;
+}
+#smallbox1{
+    /* border:2px solid brown; */
+    height:700px;
+    width:50%
+    
+}
+#smallbox2{
+    /* border:2px solid brown; */
+    height:700px;
+    width:50%;
+    display: block;
+}
+#sidebox1{
+    height:175px;
+    width:100%;
+    /* border:1px solid orange; */
+    display: flex;
+    gap:10px;
+   
+}
+#blueinsidebox{
+    height:165px;
+    width:100%;
+    border:1px solid rgb(90, 89, 89);
+    border-left:none;
+    border-right:none;
+    border-bottom: none;
+    display: flex;
+    gap:20px
+
+}
+#sidebox1>div>img{
+    width:100px;
+    height:148px;
+    margin-top: 5px;
+}
+#tigerside-1{
+    width:100px;
+    height:148px;
+    margin-top: 5px;
+    /* border:1px solid black; */
+    display: block;
+    gap:20px;
+    padding:2px;
+}
+#tigerside-1>p{
+    font-size: 14px;
+    margin-top: 130px;
+}
+#blueinsidebox>div>h4{
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#tigerside-2{
+    width:120px;
+    height:148px;
+    margin-top: 5px;
+    /* border:1px solid black; */
+    display: block;
+    gap:20px;
+}
+#blueinsidebox>div>p{
+    font-size: 14px;
+    margin-top: 114px;
+}
+#blueinsidebox>div>h4{
+    font-weight: 200;
+    font-size: 14px;
+    color:#595858;
+}
+
+#tigerside-3{
+    width:120px;
+    height:148px;
+    margin-top: 5px;
+    /* border:1px solid black; */
+    display: block;
+    gap:20px;
+}
+
+#blueinsidebox-1{
+    height:165px;
+    width:100%;
+    border:1px solid rgb(107, 105, 105);
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    display: flex;
+    gap:20px
+
+}
+#blueinsidebox-4{
+    height:165px;
+    width:100%;
+    border:1px solid rgb(107, 105, 105);
+    border-left:none;
+    border-right:none;
+    display: flex;
+    gap:20px
+
+}
+#blueinsidebox-1>div>p{
+    font-size: 14px;
+    margin-top: 63px;
+
+}
+
+#h4-art{
+    font-size: 14px;
+    font-weight: 200;
+    color:#595858;
+}
+#tigerside-4{
+    width:120px;
+    height:148px;
+    margin-top: 5px;
+    /* border:1px solid black; */
+    display: block;
+    gap:20px;
+}
+#black-paraDiv{
+    /* border:1px solid yellow; */
+     height:200px;
+    width:100%;
+    
+}
+#smallbox1>div>img{
+    height:400px;
+    width:100%;
+}
+#black-paraDiv>h4{
+    font-size: 19px;
+    margin:8px 0px 0px;
+    color:#2d2c2c;
+    font-weight: 200;
+}
+#dream-fashion{
+    margin-top: 3px;
+    font-size: 14px;
+    color:#5a5858;
+}
+                                /* Big-heading-css */
+#big-head-section{
+    /* border:1px solid black; */
+    width:100%;
+    height:780px;
+}
+#heading-big>h1{
+    text-align: center;
+    font-size: 95px;
+    margin:0px 40px 30px;
+    color:#323131;
+    font-weight: 400;
+ 
+}
+#heading-big{
+/* border:1px solid red; */
+width:60%;
+margin:auto;
+}
+#big-head-section>div>h2{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15px;
+    color:#242323;
+    font-weight: 50;
+}
+
+#Edit-views{
+    width:11%;
+    height:40px;
+    border:1px solid #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 28px;
+    margin-left: 50%;
+ }
+ 
+ .fashionSense-4{
+    margin-top:66px;
+ }
+ .fashionSense-5{
+    margin-top:110px;
+ }
+ .fashionSense-3{
+    margin-top:114px;
+ }
+ .fashionSense{
+    margin-top:90px;
+    font-weight:800;
+ }
