@@ -28,7 +28,7 @@ body{
     gap: 0px 15px;
 }
 #mid_grid div{
-    height: 70vh;
+    height: 60vh;
     padding: 10px;
 }
 #mid_grid div img{
@@ -39,4 +39,26 @@ body{
 }
 p,h3{
     font-size: 12px;
+}
+
+#innerp p{
+    padding-left: 20px;
+}
+#innerp>p:hover{
+    text-decoration: underline;
+}
+
+#inmid{
+    width: 72%;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin: 10px 0px 80px 0px;
+}
+#inmid div p{
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: .9rem;
+}
+#forP p:hover{
+    text-decoration: underline;
 }
