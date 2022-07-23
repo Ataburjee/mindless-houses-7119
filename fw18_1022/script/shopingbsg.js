@@ -22,6 +22,11 @@ function closebox(){
     mysearchbox.style.display="none"
 }
 
+var arr=JSON.parse(localStorage.getItem("User"))
+
+
+
+
 
 var arr=[ {
     image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222129F049003_1/acne-studios-white-shiny-tote.jpg",
@@ -44,7 +49,7 @@ var arr=[ {
     price: "565",
     prodID: 89,
 }
-   ]
+]
 
 let my_shopingbag=document.getElementById("bogbody")
 if(arr.length===0){

@@ -38,3 +38,11 @@
 #displaypass{
     display: none;
 }
+.l11{
+    font-size: 11px;
+    margin-top: 10px;
+}
+#dommy{
+    height: 350px;
+    width: 100%;
+}

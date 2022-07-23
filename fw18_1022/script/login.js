@@ -61,6 +61,6 @@ function mainlogin(){
    }
    else{
     alert("Login Sucssesfull...!")
-    //window.location=""
+    window.location.href="/index.html"
    } 
 }

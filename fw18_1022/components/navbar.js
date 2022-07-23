@@ -1,17 +1,17 @@
 function navbar(){
     return `<div id="inernav">
     <div id="pagelinks">
-        <a href="">MENSWEAR</a>
-        <a href="">WOMENSWEAR</a>
-        <a href="">EVERYTHING ELSE</a>
-        <a href="">SALE</a>
+        <a href="/mensAll/mensA.html">MENSWEAR</a>
+        <a href="/productpages/womens.html">WOMENSWEAR</a>
+        <a href="/productpages/accessories.html">EVERYTHING ELSE</a>
+        <a href="/productpages/bags.html">SALE</a>
         <button class="serchbutton" id="bang">SEARCH</button>
          <!--search box-->
           <div id="mysearchbox" class="modal">
             <div id="sertop">
-            <a href="">MENSWEAR</a>
-            <a href="">WOMENSWEAR</a>
-            <a href="">EVERYTHING ELSE</a>
+            <a href="/mensAll/mensA.html">MENSWEAR</a>
+            <a href="/productpages/womens.html">WOMENSWEAR</a>
+            <a href="/productpages/accessories.html">EVERYTHING ELSE</a>
           </div>
 
             <div id="serchmid"><input type="text" placeholder="Search">
@@ -27,12 +27,12 @@ function navbar(){
 
           </div>
         </div>
-     <div id="main_logo"><a href="">SSENSE</a></div>
+     <div id="main_logo"><a href="/index.html">SSENSE</a></div>
     <div id="other_nav_vontent">
         <a href="">ENGLISH</a>
-        <a href="">LOGIN</a>
+        <a href="/fw18_1022/login.html">LOGIN</a>
         <a href="">WHISHLIST</a>
-        <a href="">SHOPINGBAG</a>
+        <a href="/fw18_1022/shopingbag.html">SHOPINGBAG</a>
     </div>
 </div>`;
 }
