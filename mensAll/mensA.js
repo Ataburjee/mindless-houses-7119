@@ -578,25 +578,139 @@ let llArr = [
 'ZEGNA',
 ]
 
+
 for(let i=0 ;i<llArr.length ;i++){
     let div = document.createElement('div')
     div.innerText = llArr[i]
-    if(i===0 || i === 5){
+    if(i===0 || i===5){
+        div.style.fontSize = "12px"
         div.style.fontWeight = "900"
-        div.style.margin = "10px 0 10px 0"
-        div.style.textDecoration = "underline"
-    }else if(i===0){
-        div.style.fontWeight = "900"
-    }else if(i===1){
+        div.style.textDecoration = 'underline'
+        div.style.margin = '10px 0 10px 0'
+    }else if(i===3){
         div.addEventListener("click",function(){
-            sortAcc()
+            div.innerHTML = null
+            let contt = document.getElementById("inmid")
+            contt.innerHTML = null
+            let s_div = document.createElement('div')
+            s_div.style.marginLeft = "18px"
+            let h11 = document.createElement('h4')
+            h11.innerText = "CLOTHING"
+            h11.style.fontWeight = "800"
+            let p11 = document.createElement('p')
+            p11.innerText = "Pragmatism and versatility define offerings from our menswear designers, with modern meshings of shrewd tailoring, performance-driven athleticwear, and experimentally proportioned sportswear making up an adaptable whole. Outerwear bridges the traditional and the technical. Hooded anoraks, raincoats, and down-filled puffer jackets rendered in technical materials exhibit hyper-utilitarian engineering, while perennial wool peacoats, leather motorcycle jackets, and shearling jackets answer all style scenarios. For the tailoring-inclined, shirts and suiting in purist forms get elevated to statement status with bondage details, straps, and buckle accents, while graphic embellishments and embroidery adorn quilted bombers, wool and cashmere cardigans, and crewneck pullovers. Taking streetwear into new contexts are tracksuits, zip-ups, and hoodies that offer subculture symbolism and technical invention. Denim has a grunge appeal: Sulfur washes and ripped distressing are confidently casual, and tapered, wide-leg, and cropped fits exude an eclectic new masculinity"
+            p11.style.opacity = ".8"
+            s_div.append(h11, p11)
+            contt.append(s_div)
+
+            let p00 = document.createElement('p')
+            p00.innerText = "CLOTHING"
+            p00.style.fontWeight = "900"
+            p00.style.textDecoration = "underline"
+            
+            let box = document.createElement('div')
+            box.setAttribute("id","forp")
+            box.style.marginLeft = "20px"
+
+            let p1 = document.createElement('p')
+            p1.innerText = "Jackets & Coats"
+            p1.addEventListener("click",function(){
+                p1_sort()
+            })
+            let p2 = document.createElement('p')
+            p2.innerText = "Jeans"
+            p2.addEventListener("click",function(){
+                p2_sort()
+            })
+            let p3 = document.createElement('p')
+            p3.innerText = "Pants"
+            p3.addEventListener("click",function(){
+                p3_sort()
+            })
+            let p4 = document.createElement('p')
+            p4.innerText = "Shirts"
+            p4.addEventListener("click",function(){
+                p4_sort()
+            })
+            let p5 = document.createElement('p')
+            p5.innerText = "Shorts"
+            p5.addEventListener("click",function(){
+                p5_sort()
+            })
+            let p6 = document.createElement('p')
+            p6.innerText = "Suits & Blazers"
+            p6.addEventListener("click",function(){
+                p6_sort()
+            })
+            let p7 = document.createElement('p')
+            p7.innerText = "Sweters"
+            p7.addEventListener("click",function(){
+                p7_sort()
+            })
+            box.append(p00 ,p1 ,p2, p3, p4, p5, p6, p7)
+            div.append(p00, box)
+            
         })
+        
+    }else if(i===4){
+        div.addEventListener("click",function(){
+            window.location.href = "../shoes/shoes.html"
+        })
+        
     }
+
+    
     document.querySelector("#left").append(div)
+} 
+
+let p1_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "jacket" || el.type === "coat")
+    })
+    midProducts(filter)
+}
+let p2_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "jeans" || el.type === "pant")
+    })
+    midProducts(filter)
+}
+let p3_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "pant")
+    })
+    midProducts(filter)
+}
+let p4_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "shirt")
+    })
+    midProducts(filter)
+}
+let p5_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "short")
+    })
+    midProducts(filter)
+}
+let p6_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "blazer")
+    })
+    midProducts(filter)
+}
+let p7_sort = () => {
+    let filter = prArr.filter((el) => {
+        return (el.type === "sweter")
+    })
+    midProducts(filter)
 }
 
+
+
+
 rArr = [
-    'SORT',
+    'SORT', 
 'Latest arrivals',
 'Trending',
 'Price: Low to high',
@@ -652,17 +766,14 @@ for(let i=0 ;i<rArr.length ;i++){
 
 
 
-
-
-
 prArr = [
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.0/221525M196010_1/husbands-ssense-exclusive-off-white-linen-suit.jpg',
         name:'SSENSE Exclusive Off-White Linen',
         brand:'HUSBANDS',
         price:2010,
-        id:'a',
-        type:'shirt'
+        id:2,
+        type:'T-shirt'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221525M195013_1/husbands-ssense-exclusive-black-linen-blazer.jpg',
@@ -816,6 +927,22 @@ prArr = [
         type:'pant'
     },
     {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M200003_1/gucci-pink-gg-cardigan.jpg',
+        name:'Pink Organic Cotton Coat',
+        brand:'ACNE STUDIOS',
+        price:1495,
+        id:'aaac',
+        type:'sweter'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M201002_1/gucci-yellow-gg-sweater.jpg',
+        name:'pink Organic Cotton Coat',
+        brand:'ACNE STUDIOS',
+        price:1395,
+        id:'aaad',
+        type:'sweter'
+    },
+    {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M191009_1/acne-studios-brown-fan-print-trousers.jpg',
         name:'Brown Fan Print',
         brand:'ACNE STUDIOS',
@@ -850,6 +977,30 @@ prArr = [
         type:'pant'
     },
     {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M204005_1/gucci-orange-cotton-sweatshirt.jpg',
+        name:'Orange Organic Cotton Coat',
+        brand:'GUCCI',
+        price:1395,
+        id:'aaae',
+        type:'sweter'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M202009_1/gucci-pink-patch-hoodie.jpg',
+        name:'Orange Organic Cotton Coat',
+        brand:'GUCCI',
+        price:1795,
+        id:'aaaF',
+        type:'sweter'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M202009_1/gucci-pink-patch-hoodie.jpg',
+        name:'Orange Organic Cotton Coat',
+        brand:'GUCCI',
+        price:2120,
+        id:'aaaG',
+        type:'sweter'
+    },
+    {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M186047_1/acne-studios-blue-1996-straight-fit-jeans.jpg',
         name:'Blue 1996 Straight Fit Jeans',
         brand:'ACNE STUDIOS',
@@ -881,7 +1032,7 @@ prArr = [
         brand:'ACNE STUDIOS',
         price:225,
         id:'aa',
-        type:'pant'
+        type:'short'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222129M213082_1/acne-studios-green-mock-neck-t-shirt.jpg',
@@ -898,7 +1049,7 @@ prArr = [
         brand:'HOMME PLISSÉ ISSEY MIYAKE',
         price:775,
         id:'ac',
-        type:'pant'
+        type:'jacket'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222729M180018_1/homme-plisse-issey-miyake-black-flip-jacket.jpg',
@@ -1104,11 +1255,19 @@ prArr = [
         type:'shirt'
     },
     {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222729M195010_1/homme-plisse-issey-miyake-black-tailored-pleats-1-blazer.jpg',
+        name:'White Emman Eddies Shirt',
+        brand:'GUCCI',
+        price:3050,
+        id:'aav',
+        type:'blazer'
+    },
+    {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M213001_1/hugo-hugo-boss-white-delectric-t-shirt.jpg',
         name:'White Delectric T-Shirt',
         brand:'HUGO',
         price:80,
-        id:'aac',
+        id:'aaw',
         type:'shirt'
     },
     {
@@ -1116,16 +1275,48 @@ prArr = [
         name:'White Cotton T-Shirt',
         brand:'HUGO',
         price:75,
-        id:'aad',
+        id:'aax',
         type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221525M196010_1/husbands-ssense-exclusive-off-white-linen-suit.jpg',
+        name:'White Emman Eddies Shirt',
+        brand:'GUCCI',
+        price:3250,
+        id:'aab',
+        type:'blazer'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222887M196002_1/brunello-cucinelli-navy-single-breasted-suit.jpg',
+        name:'Black Emman Eddies Shirt',
+        brand:'GUCCI',
+        price:3055,
+        id:'aay',
+        type:'blazer'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.0/222084M213031_1/hugo-hugo-boss-white-mr-bathing-ape-edition-logo-t-shirt.jpg',
         name:'White Mr. Bathing Delectric T-Shirt',
         brand:'HUGO',
         price:130,
-        id:'aae',
+        id:'aaz',
         type:'shirt'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222213M192000_1/polo-ralph-lauren-white-classic-fit-shirt.jpg',
+        name:'White Mr. Bathing Delectric T-Shirt',
+        brand:'FOLO',
+        price:230,
+        id:'aam',
+        type:'short'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M195004_1/gucci-beige-double-breasted-blazer.jpg',
+        name:'White Mr. Bathing Delectric T-Shirt',
+        brand:'GUCCI',
+        price:3715,
+        id:'aaO',
+        type:'suit'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222769M165011_1/frandeacutedandeacuterique-constant-black-classics-index-automatic-watch.jpg',
@@ -1136,12 +1327,76 @@ prArr = [
         type:'watch'
     },
     {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222729M195005_1/homme-plisse-issey-miyake-yellow-tailored-pleats-1-blazer.jpg',
+        name:'Yellow Emman Eddies Blazer',
+        brand:'GUCCI',
+        price:3355,
+        id:'aad',
+        type:'blazer'
+    },
+    {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222769M165016_1/frandeacutedandeacuterique-constant-silver-and-navy-classics-quartz-watch.jpg',
         name:'Silver & Navy Classics Index Watch',
         brand:'FREDERIQUE CONSTANT',
         price:1055,
         id:'aag',
         type:'watch'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M180001_1/gucci-navy-gg-jacket.jpg',
+        name:'Silver & Navy Classics Index Watch',
+        brand:'GUCCI',
+        price:2240,
+        id:'aaaf',
+        type:'jacket'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222085M195001_1/boss-hugo-boss-blue-houndstooth-blazer.jpg',
+        name:'Yellowise Eddies blazer',
+        brand:'GUCCI',
+        price:4355,
+        id:'aaaa',
+        type:'blazer'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M185000_1/bottega-veneta-green-shirring-vest.jpg',
+        name:'Silver & Navy Classics Index Watch',
+        brand:'GUCCI',
+        price:2240,
+        id:'aaag',
+        type:'jacket'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222213M192008_1/polo-ralph-lauren-blue-classic-fit-gingham-shirt.jpg',
+        name:'Torsell 1328 Sunglasses',
+        brand:'POLOS',
+        price:195,
+        id:'aak',
+        type:'short'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M180000_1/bottega-veneta-off-white-cotton-jacket.jpg',
+        name:'Silver & Navy Classics jacket',
+        brand:'GUCCI',
+        price:2240,
+        id:'aaah',
+        type:'jacket'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222359M193005_1/the-row-ssense-exclusive-black-eston-shorts.jpg',
+        name:'Silver & Navy Classics Shorts',
+        brand:'GUCCI',
+        price:640,
+        id:'aaaj',
+        type:'short'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222359M193004_1/the-row-ssense-exclusive-beige-gerhardt-shorts.jpg',
+        name:'Silver & Navy Classics Shorts',
+        brand:'SSENSE ROW',
+        price:640,
+        id:'aaak',
+        type:'short'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M134060_1/bottega-veneta-gold-1107-sunglasses.jpg',
@@ -1152,12 +1407,36 @@ prArr = [
         type:'eyewear'
     },
     {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221799M193000_1/converse-yellow-peanuts-edition-shapes-shorts.jpg',
+        name:'Silver & Navy Classics Shorts',
+        brand:'SSENSE ROW',
+        price:640,
+        id:'aaal',
+        type:'short'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222887M180000_1/brunello-cucinelli-navy-cotton-jacket.jpg',
+        name:'Silver & Navy jacket',
+        brand:'GUCCI',
+        price:3240,
+        id:'aaai',
+        type:'jacket'
+    },
+    {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222798M133000_1/bottega-veneta-black-aviator-glasses.jpg',
         name:'Gold 1107 Sunglasses',
         brand:'BOTTEGA VENETA',
         price:360,
         id:'aai',
         type:'eyewear'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451M195002_1/gucci-navy-horsebit-formal-blazer.jpg',
+        name:'White Emman Es Blazer',
+        brand:'GUCCI',
+        price:4055,
+        id:'aaab',
+        type:'blazer'
     },
     {
         image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222331M134003_1/cutler-and-gross-tortoiseshell-1328-sunglasses.jpg',
@@ -1167,6 +1446,22 @@ prArr = [
         id:'aaJ',
         type:'eyewear'
     },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222085M192012_1/boss-hugo-boss-beige-stripe-shirt.jpg',
+        name:'Torsell 1328 Sunglasses',
+        brand:'BOSS',
+        price:185,
+        id:'aal',
+        type:'short'
+    },
+    {
+        image:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221213M192031_1/polo-ralph-lauren-pink-cotton-shirt.jpg',
+        name:'Torsell 1328 Sunglasses',
+        brand:'BOSS',
+        price:185,
+        id:'aan',
+        type:'short'
+    },
 ]
 
 
@@ -1175,9 +1470,19 @@ let midProducts = (data) => {
     let cont = document.getElementById("mid_grid")
     cont.innerHTML = null
     data.forEach( (el) => {
+
+
         let div = document.createElement('div')
+        div.addEventListener("click",function(){
+            localStorage.setItem("pro_data",JSON.stringify(el))
+            let x = JSON.parse(localStorage.getItem("pro_data"))
+            console.log(x)
+            window.location.href = "../pro_page/pro_page.html"
+        })
 
         let img = document.createElement('img')
+        img.style.cursor = 'pointer'
+        
         img.src = el.image
 
         let name = document.createElement('p')
@@ -1200,7 +1505,7 @@ function lthFun(){
     let filter = prArr.sort(function(a,b){
         return a.price < b.price ? -1 : 1;
     })
-    console.log(filter)
+    
     midProducts(filter)
     
 }
@@ -1209,27 +1514,24 @@ function htlFun(){
     let filter = prArr.sort(function(a,b){
         return a.price < b.price ? 1 : -1;
     })
-    console.log(filter)
-    midProducts(filter)
     
+    midProducts(filter)
 }
-function trendingFun(){
+
+let = trendingFun = () => {
     let filter = prArr.filter(function(el){
         return el.trending === true ;
     })
-    console.log(filter)
-    midProducts(filter)
     
+    midProducts(filter)
 }
-function latestArrivalFun(){
+
+let = latestArrivalFun = () => {
     let filter = prArr.filter(function(el){
         return el.trending === 'yes' ;
     })
-    console.log(filter)
+    
     midProducts(filter)
     
 }
 
-function sortAcc(){
-    
-}

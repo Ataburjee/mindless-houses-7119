@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pro_main{
+    display: flex;
+    height: 90vh;
+}
+#pro_main>div{
+    margin: auto;
+    width: 32%;
+    height: 100%;
+}
+#add_to_bag{
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    width:110%
+}
+#pro_right div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    gap: 10px;
+    cursor: pointer;
+}
+#pro_left{
+    padding: 20px;
+    font-size: 11px;
+    letter-spacing: .5px;
+    line-height: 20px;
+}
+#pro_mid img{
+    height: 100%;
+}
+h3{
+    font-weight: 800;
+    margin-top: 20vh;
+}
+h4{
+    margin: 30vh 0 3vh 17.4vh;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    padding:1%;
+    font-size: 20px;
+}
