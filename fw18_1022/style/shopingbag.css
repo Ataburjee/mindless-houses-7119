@@ -1,9 +1,9 @@
 #bogbody{
-    height: 400px;
+    height: auto;
     width: 90%;
     margin: auto;
     margin-top: 100px;
-    background-color: aquamarine;
+  
   
   
 }
@@ -32,7 +32,7 @@
 #em_pagedirectors{
     height: 50px;
     width: 100%;
-  
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,4 +47,239 @@
     font-size: 11px;
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+#main_body_bag{
+    width: 100%;
+    height:auto;
+    display: flex;
+}
+#bagproducts_deatels{
+    height:auto;
+    width: 900px;
+    margin-left: 75px;
+   
+}
+#proiead_to_checkoutpage{
+    height: 300px;
+    width: 300px;
+    margin-left: 75px;
+   
+}
+.h11{
+    font-size: 11px;
+}
+#ptcphead{
+    height: 30px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+}
+#ptcpemailadd{
+    height: 40px;
+    width: 100%;
+    
+    
+}
+.h12{
+    font-size: 11px; 
+    color: rgb(106, 105, 105);
+}
+#procied_to_checoutbtn{
+    height: 37px;
+    width: 100%;
+    background-color: black;
+    color:#FFF;
+    font-size: 11px;
+}
+
+#spbhead{
+    height: 30px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+}
+#spbheadtitle{
+    height: 25px;
+    width: 100%;
+   border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+#itme{
+    height: 100%;
+    width: 550px;
+  
+
+}
+#itme>p{
+    margin-left: 125px;
+}
+#total{
+    height: 100%;
+    width: 200px;
+     margin-left: 50px;
+}
+#total>p{
+    margin-left: 80%;
+}
+#container0{
+    height:auto;
+    width: 100%;
+   
+    display: block;
+    gap: 15px;
+}
+#totalOf_bag{
+    height: 100px;
+    width: 100%;
+    display: flex;
+ 
+}
+#tbsubh{
+    height: 100px;
+    width: 550px;
+    
+
+}
+#tbsubh01{
+    height: 100%;
+    width: 200px;
+    margin-left: 40px;
+  
+}
+.to1{
+    font-size: 11px;
+    margin-left: 125px;
+    margin-top: 25px;
+}
+.to2{
+    font-size: 11px;
+    margin-left: 125px;
+}
+.to3{
+    font-size: 12px;
+    margin-left: 125px;
+    font-weight: bolder;
+}
+.to11{
+    font-size: 11px;
+   text-align: end;
+    margin-top: 25px;
+}
+.to22{
+    font-size: 11px;
+    text-align: end;
+}
+.to33{
+    font-size: 12px;
+    text-align: end;
+    font-weight: bold;
+}
+#popularItm{
+    height: auto;
+    width: 800px;
+    margin-top: 50px;
+ 
+}
+#ppcontainer{
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#ppcontainer>div{
+    height: 100%;
+    width: 14%;
+    padding: 2px;
+}
+#ppcontainer>div>img{
+width: 100%;
+height: auto;
+}
+#ppcontainer>div>h3{
+    font-size: 12px;
+    text-align: center;
+}
+#ppcontainer>div>p{
+    font-size: 11px;
+    text-align: center;
+}
+#ppcontainer>div>h4{
+    
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+   cursor: pointer;
+}
+#bagbox{
+    height: 155px;
+    width: 100%;
+    display: flex;
+   
+    border-bottom: 1px solid grey;
+}
+#imgdiv{
+    height: 100%;
+    width: 120px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgdiv>img{
+    width: 70%;
+    height:auto;
+}
+#descdiv{
+height: 100%;
+width: 680px;
+display: flex;
+
+}
+#descdiv1{
+height: 100%;
+width: 50%;
+
+}
+#descdiv1>h2{
+font-size: 12px;
+margin-top: 20px;
+font-weight: 500;
+
+}
+#descdiv1>p{
+    font-size: 11.5px;
+    margin-top: 2.5px;
+
+}
+#descdiv1>h5{
+    font-size: 11.5px;
+    margin-top: 55px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+#descdiv2{
+    height: 100%;
+    width: 50%;
+    
+}
+#descdiv2>h2{
+    text-align: end;
+    font-size: 12px;
+margin-top: 20px;
+font-weight: 500;
+}
+#descdiv2>h4{
+    text-align: end;
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 85px;
 }
