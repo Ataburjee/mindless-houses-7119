@@ -772,7 +772,7 @@ prArr = [
         name:'SSENSE Exclusive Off-White Linen',
         brand:'HUSBANDS',
         price:2010,
-        id:'a',
+        id:2,
         type:'T-shirt'
     },
     {
@@ -1470,9 +1470,19 @@ let midProducts = (data) => {
     let cont = document.getElementById("mid_grid")
     cont.innerHTML = null
     data.forEach( (el) => {
+
+
         let div = document.createElement('div')
+        div.addEventListener("click",function(){
+            localStorage.setItem("pro_data",JSON.stringify(el))
+            let x = JSON.parse(localStorage.getItem("pro_data"))
+            console.log(x)
+            window.location.href = "../pro_page/pro_page.html"
+        })
 
         let img = document.createElement('img')
+        img.style.cursor = 'pointer'
+        
         img.src = el.image
 
         let name = document.createElement('p')
@@ -1495,7 +1505,7 @@ function lthFun(){
     let filter = prArr.sort(function(a,b){
         return a.price < b.price ? -1 : 1;
     })
-    console.log(filter)
+    
     midProducts(filter)
     
 }
@@ -1504,7 +1514,7 @@ function htlFun(){
     let filter = prArr.sort(function(a,b){
         return a.price < b.price ? 1 : -1;
     })
-    console.log(filter)
+    
     midProducts(filter)
 }
 
@@ -1512,7 +1522,7 @@ let = trendingFun = () => {
     let filter = prArr.filter(function(el){
         return el.trending === true ;
     })
-    console.log(filter)
+    
     midProducts(filter)
 }
 
@@ -1520,7 +1530,7 @@ let = latestArrivalFun = () => {
     let filter = prArr.filter(function(el){
         return el.trending === 'yes' ;
     })
-    console.log(filter)
+    
     midProducts(filter)
     
 }
