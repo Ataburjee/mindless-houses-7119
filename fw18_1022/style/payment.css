@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+#navbar{
+    position:fixed;
+    top: 0px;
+    height:auto ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+#logoman{
+    height: 50px;
+    width: 150px;
+    margin: auto;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logoman>a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+}
+#paybody{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+}
+#checkoutbody{
+   height: auto;
+   width: 800px;
+   border: 1px solid black;
+}
+
+#ch1hed{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#ch1hed>p{
+    font-size: 11px;
+}
+#chadd{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+#chadd>p{
+    font-size: 11px; 
+}
+#adddetail{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+#add1{
+    height: 400px;
+    width: 50%;
+    border: 1px solid black;
+
+}
+#add2{
+    height: 400px;
+    width: 50%;
+    border: 1px solid black; 
+}
+.addheadding{
+    font-size: 11px;
+    margin-top: 15px;
+}
+.inputforadd{
+    height: 35px;
+    width: 343px;
+    margin-top: 3px;
+}
+.inputforph{
+    height: 35px;
+    width: 160px;
+    margin-top: 3px;
+}
+#product_details{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(0, 14, 14);
+}
