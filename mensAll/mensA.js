@@ -590,6 +590,18 @@ for(let i=0 ;i<llArr.length ;i++){
     }else if(i===3){
         div.addEventListener("click",function(){
             div.innerHTML = null
+            let contt = document.getElementById("inmid")
+            contt.innerHTML = null
+            let s_div = document.createElement('div')
+            s_div.style.marginLeft = "18px"
+            let h11 = document.createElement('h4')
+            h11.innerText = "CLOTHING"
+            h11.style.fontWeight = "800"
+            let p11 = document.createElement('p')
+            p11.innerText = "Pragmatism and versatility define offerings from our menswear designers, with modern meshings of shrewd tailoring, performance-driven athleticwear, and experimentally proportioned sportswear making up an adaptable whole. Outerwear bridges the traditional and the technical. Hooded anoraks, raincoats, and down-filled puffer jackets rendered in technical materials exhibit hyper-utilitarian engineering, while perennial wool peacoats, leather motorcycle jackets, and shearling jackets answer all style scenarios. For the tailoring-inclined, shirts and suiting in purist forms get elevated to statement status with bondage details, straps, and buckle accents, while graphic embellishments and embroidery adorn quilted bombers, wool and cashmere cardigans, and crewneck pullovers. Taking streetwear into new contexts are tracksuits, zip-ups, and hoodies that offer subculture symbolism and technical invention. Denim has a grunge appeal: Sulfur washes and ripped distressing are confidently casual, and tapered, wide-leg, and cropped fits exude an eclectic new masculinity"
+            p11.style.opacity = ".8"
+            s_div.append(h11, p11)
+            contt.append(s_div)
 
             let p00 = document.createElement('p')
             p00.innerText = "CLOTHING"
@@ -639,11 +651,15 @@ for(let i=0 ;i<llArr.length ;i++){
             div.append(p00, box)
             
         })
-    }
-    else if(i===4){
+        
+    }else if(i===4){
         div.addEventListener("click",function(){
-            midProducts(shoesArr)
+            window.location.href = "../shoes/shoes.html"
         })
+        
+    }
+
+    
     document.querySelector("#left").append(div)
 } 
 
@@ -1509,4 +1525,3 @@ let = latestArrivalFun = () => {
     
 }
 
-}
