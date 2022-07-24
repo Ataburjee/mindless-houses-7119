@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./whish.css">
+
     <!--Font-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,21 +45,36 @@
 
 
 
+
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+
     let appendData=()=>{
         let xy=JSON.parse(localStorage.getItem("Atabur")) || [];
       console.log(xy)
 
+
     xy.forEach(({image,price,name},index)=>{
+
+    xy.forEach(({image},index)=>{
+
     let cont=document.querySelector("#container");
     let div=document.createElement("div")
 
     let img=document.createElement("img");
     img.src=image;
 
+
     let name=document.createElement("h3");
     name.innerText=name
     let name1=document.createElement("p");
     name1.innerText=price
+
+
     let div11 = document.createElement("div")
     let btn=document.createElement("button")
         btn.innerText="Remove";
@@ -73,7 +89,11 @@
         })
         div11.append(btn, btn1)
 
+
     div.append(img,div11,name,name1)
+
+    div.append(img,div11)
+
     cont.append(div)
 })
     }
@@ -98,6 +118,7 @@ function remove(index){
     localStorage.setItem("Atabur",JSON.stringify(newData));
     appendData();
 };
+
 
 let arr=JSON.parse(localStorage.getItem("Atabur")) || [];
 console.log(arr)
@@ -204,6 +225,8 @@ descdiv.append(descdiv1,descdic2)
 })
 
 }
+
+
 
 
 // let add_to_bag = () => {
