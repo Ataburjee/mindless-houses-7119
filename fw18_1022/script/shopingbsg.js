@@ -22,33 +22,22 @@ function closebox(){
     mysearchbox.style.display="none"
 }
 
-var arr=JSON.parse(localStorage.getItem("User"))
-
-
-
-
-
-var arr=[ {
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222129F049003_1/acne-studios-white-shiny-tote.jpg",
-    title: "ACNE STUDIOS",
-    detail: "White Shiny Tone",
-    price: "800",
-    prodID: 87,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222187F110001_1/alexander-wang-white-cotton-t-shirt.jpg",
-    title: "MAx",
-    detail: "White Cotton tshirt",
-    price: "835",
-    prodID: 88,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451F016003_1/gucci-beige-raffia-effect-gg-cap.jpg",
-    title: "GUCCI",
-    detail: "Beige Raffia Effect GG Cap",
-    price: "565",
-    prodID: 89,
+var user=JSON.parse(localStorage.getItem("User"))||null
+console.log(user)
+if(!user){
+    document.getElementById("bogbody").innerHTML=`<div id="emptybag"> 
+    <div id="em_heading"><p>SHOPPING BAG</p> </div>
+    <div id="em_alert"><p>Your shopping bag is empty</p></div>
+    <div id="em_pagedirectors">
+        <button><a href="">SHOP MENSWERE </a></button>
+        <button><a href="">SHOP WOMENSWEAR</a></button>
+       <button><a href="">SHOP EVERYTHING ELSE</a></button></div>
+   </div>`
 }
+
+
+
+var arr=[ 
 ]
 
 let my_shopingbag=document.getElementById("bogbody")
