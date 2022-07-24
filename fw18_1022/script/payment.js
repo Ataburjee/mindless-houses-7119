@@ -1,25 +1,4 @@
-var arr=[ {
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222129F049003_1/acne-studios-white-shiny-tote.jpg",
-    title: "ACNE STUDIOS",
-    detail: "White Shiny Tone",
-    price: "800",
-    prodID: 87,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222187F110001_1/alexander-wang-white-cotton-t-shirt.jpg",
-    title: "MAx",
-    detail: "White Cotton tshirt",
-    price: "835",
-    prodID: 88,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451F016003_1/gucci-beige-raffia-effect-gg-cap.jpg",
-    title: "GUCCI",
-    detail: "Beige Raffia Effect GG Cap",
-    price: "565",
-    prodID: 89,
-}
-]
+let arr=JSON.parse(localStorage.getItem("Atabur")) || [];
 
 let totalitem=document.getElementById("totalitems")
 totalitem.innerText="ORDER SUMMARY"+"-"+"("+arr.length+")"+" "+"ITEM"
@@ -81,5 +60,5 @@ document.getElementById("paceorder").addEventListener("click",function(){
 
 let myfun=()=>{
     alert("Your Order is sucsessfully complited  ")
-    //window.location=""
+    window.location="/index.html"
 }

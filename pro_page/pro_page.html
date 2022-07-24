@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+   <!--Fontawsem kitcode-->
+   <script src="https://kit.fontawesome.com/2590fb7d46.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="/fw18_1022/style/navbar.css">
     <link rel="stylesheet" href="../pro_page/pro_page.css">
 </head>
 <body>
+     <!--Navbar-->
+   <div id="navbar"></div>
+
+
+    <link rel="stylesheet" href="../pro_page/pro_page.css">
+</head>
+<body>
+
     <div id="pro_main">
         <div id="pro_left">
             <h3></h3>
@@ -40,6 +61,23 @@ Made in Portugal. <br>
             </div>
         </div>
     </div>
+
+    <!---Fotter-->
+    <div id="fotter"></div>
+
 </body>
 </html>
 <script src="./pro_page.js"></script>
+<script type="module">
+    import {navbar,fotter} from "/fw18_1022/components/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+    document.getElementById("fotter").innerHTML=fotter()
+    
+    
+    
+    </script>
+
+</body>
+</html>
+<script src="./pro_page.js"></script>
+

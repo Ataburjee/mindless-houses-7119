@@ -30,7 +30,7 @@ creatacount.addEventListener("click",function(event){
     creat_acount(event)
 })
 
-var arr=JSON.parse(localStorage.getItem("User"))
+var arr=JSON.parse(localStorage.getItem("User"))||null
 
 function  creat_acount(event){
 event.preventDefault()
@@ -40,6 +40,7 @@ let user={
 }
 
 localStorage.setItem("User",JSON.stringify(user))
+window.location.href="/fw18_1022/login.html"
 console.log(user)
 
 }

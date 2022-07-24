@@ -22,34 +22,35 @@ function closebox(){
     mysearchbox.style.display="none"
 }
 
-var arr=JSON.parse(localStorage.getItem("User"))
+<<<<<<< Updated upstream
+var user=JSON.parse(localStorage.getItem("User"))||null
+console.log(user)
+if(!user){
+=======
+var userarr=JSON.parse(localStorage.getItem("User"))||null;
 
 
-
-
-
-var arr=[ {
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222129F049003_1/acne-studios-white-shiny-tote.jpg",
-    title: "ACNE STUDIOS",
-    detail: "White Shiny Tone",
-    price: "800",
-    prodID: 87,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222187F110001_1/alexander-wang-white-cotton-t-shirt.jpg",
-    title: "MAx",
-    detail: "White Cotton tshirt",
-    price: "835",
-    prodID: 88,
-},
-{
-    image: "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222451F016003_1/gucci-beige-raffia-effect-gg-cap.jpg",
-    title: "GUCCI",
-    detail: "Beige Raffia Effect GG Cap",
-    price: "565",
-    prodID: 89,
+if(!userarr){
+>>>>>>> Stashed changes
+    document.getElementById("bogbody").innerHTML=`<div id="emptybag"> 
+    <div id="em_heading"><p>SHOPPING BAG</p> </div>
+    <div id="em_alert"><p>Your shopping bag is empty</p></div>
+    <div id="em_pagedirectors">
+        <button><a href="">SHOP MENSWERE </a></button>
+        <button><a href="">SHOP WOMENSWEAR</a></button>
+       <button><a href="">SHOP EVERYTHING ELSE</a></button></div>
+   </div>`
 }
+
+
+
+<<<<<<< Updated upstream
+var arr=[ 
 ]
+=======
+let arr=JSON.parse(localStorage.getItem("Atabur")) || [];
+
+>>>>>>> Stashed changes
 
 let my_shopingbag=document.getElementById("bogbody")
 if(arr.length===0){
@@ -57,9 +58,9 @@ if(arr.length===0){
     <div id="em_heading"><p>SHOPPING BAG</p> </div>
     <div id="em_alert"><p>Your shopping bag is empty</p></div>
     <div id="em_pagedirectors">
-        <button><a href="">SHOP MENSWERE </a></button>
-        <button><a href="">SHOP WOMENSWEAR</a></button>
-       <button><a href="">SHOP EVERYTHING ELSE</a></button></div>
+        <button><a href="/mensAll/mensA.html">SHOP MENSWERE </a></button>
+        <button><a href="/productpages/womens.html">SHOP WOMENSWEAR</a></button>
+       <button><a href="/productpages/accessories.html">SHOP EVERYTHING ELSE</a></button></div>
    </div>`
 }
 else{
@@ -107,9 +108,20 @@ else{
     </div>
 </div>`
 
+let omm=document.getElementById("procied_to_checoutbtn")
+omm.addEventListener("click",function(){
+    protochekout()
+})
+function protochekout(){
+    window.location.href="/fw18_1022/payment.html"
+}
+
+
+
+
 let containerbag=document.getElementById("container0")
 let bag=["FR","TR","SM","FH"]
-arr.forEach((el)=>{
+arr.forEach((el,index)=>{
  let box=document.createElement("div")
  box.setAttribute("id","bagbox")
 
@@ -126,9 +138,9 @@ arr.forEach((el)=>{
  let descdiv1=document.createElement("div")
  descdiv1.setAttribute("id","descdiv1")
  let title=document.createElement("h2")
- title.innerText=el.title;
+ title.innerText=el.brand;
  let details=document.createElement("p")
- details.innerText=el.detail
+ details.innerText=el.name
  let size=document.createElement('p')
 
  size.innerText="SIZE"+":"+" "+bag[Math.floor(Math.random()*bag.length)]
@@ -142,7 +154,9 @@ let price=document.createElement("h2")
 price.innerText="$"+el.price+" "+"USD"
 let remove=document.createElement("h4")
 remove.innerText="remove"
-
+remove.addEventListener("click",function(){
+    removeprod(index)
+})
 descdic2.append(price,remove)
  descdic2.setAttribute("id","descdiv2")
 
@@ -152,7 +166,24 @@ descdiv.append(descdiv1,descdic2)
 
 })
 
+function  removeprod(index){
+    let xy=JSON.parse(localStorage.getItem("Atabur")) || [];
 
+    let newData=xy.filter(function(ele,i){
+        if(i===index)
+        {
+            let trash=JSON.parse(localStorage.getItem("trash")) || []
+            trash.push(ele)
+            localStorage.setItem("trash",JSON.stringify(trash))
+        }
+        else{
+            return i!== index;
+        }
+        window.location.reload();
+    });
+    localStorage.setItem("Atabur",JSON.stringify(newData));
+    appendData();
+}
 
 
 let accData = [

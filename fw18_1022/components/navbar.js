@@ -31,7 +31,7 @@ function navbar(){
     <div id="other_nav_vontent">
         <a href="">ENGLISH</a>
         <a href="/fw18_1022/login.html">LOGIN</a>
-        <a href="">WHISHLIST</a>
+        <a href="/pro_page/whish.html">WHISHLIST</a>
         <a href="/fw18_1022/shopingbag.html">SHOPINGBAG</a>
     </div>
 </div>`;
