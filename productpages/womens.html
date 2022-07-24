@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Womens Wear</title>
     <link rel="stylesheet" href="womens.css">
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!--Fontawsem kitcode-->
+<script src="https://kit.fontawesome.com/2590fb7d46.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/fw18_1022/style/navbar.css">
+
+
 </head>
 
 <body>
+
+    <!--Navbar-->
+   <div id="navbar"></div>
     <div id="main">
         <div id="leftsidebar">
             <h2>ALL CATEGORIES</h2>
@@ -502,8 +517,39 @@
 
         </div>
     </div>
+
+    <!---Fotter-->
+    <div id="fotter"></div>
 </body>
 
 </html>
 
 <script src="womens.js"></script>
+
+<script type="module">
+    import {navbar,fotter} from "/fw18_1022/components/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+    document.getElementById("fotter").innerHTML=fotter()
+    let serachbtn=document.getElementById("bang")
+serachbtn.addEventListener("click",function(){
+    openserchbox()
+})
+
+let closebtn=document.getElementById("colsebtn")
+closebtn.addEventListener("click",function(){
+    closebox()
+})
+
+function openserchbox(){
+    let mysearchbox=document.getElementById("mysearchbox")
+    mysearchbox.style.display="block"
+}
+
+function closebox(){
+    let mysearchbox=document.getElementById("mysearchbox")
+    mysearchbox.style.display="none"
+}
+
+    
+    
+    </script>

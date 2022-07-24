@@ -2,6 +2,7 @@
     /* border: 1px solid black; */
     height: 340px;
     width: 100%;
+    margin-top: 50px;
 }
 
 #ProductHeading>h1 {
@@ -18,13 +19,14 @@
     color: rgb(56, 56, 56);
     font-weight: 600;
     line-height: 3px;
-
+    margin-top: 25px;
 }
 
 #fb-gg-p {
     height: 40px;
     width: 100%;
     margin: auto;
+    margin-top: 50px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -138,7 +140,7 @@
 }
 
 #next-Para {
-    margin-top: -14px;
+
 }
 
 #next-Para>p {
@@ -194,7 +196,7 @@
 #RoleBottle>p {
     font-size: 20px;
     color: #333333;
-    margin-top: -15px;
+  
 }
 
 /* Bag */
@@ -249,7 +251,7 @@
 #RoleBottle1>p {
     font-size: 20px;
     color: #333333;
-    margin-top: -15px;
+    
 }
 
 /* GOGGLES-CSS */
@@ -305,7 +307,7 @@
 #RoleBottle2>p {
     font-size: 20px;
     color: #333333;
-    margin-top: -15px;
+   
 }
 
 /* Boat_Earphn-image  */
@@ -362,7 +364,6 @@
 #RoleBottle3>p {
     font-size: 20px;
     color: #333333;
-    margin-top: -15px;
 }
 #dataParapassage{
     height:50px;
@@ -476,6 +477,6 @@ line-height: 80px;
     text-align: center;
     margin: 20px 0px;
     color: #333333;
-    margin-top: -75px;
+
     font-weight: 100;
 }
