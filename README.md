@@ -64,5 +64,9 @@
       <li>Email: lakhmani.om2099@gmail.com</li>
       <li>LinkedIn: www.linkedin.com/in/omkar-lakhmani</li></ul>
 
-  
+  <h4>Harshal Apsunde</h4>
+    <ul><li>Github: HARSHAL-AP</li>
+      <li>Github Link: https://https://github.com/HARSHAL-AP</li>
+      <li>Email: apsundeharshal129@gmail.com</li>
+      <li>LinkedIn: https://www.linkedin.com/in/harshal-apsunde-42b40b236</li></ul>
   </html>
