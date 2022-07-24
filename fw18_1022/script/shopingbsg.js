@@ -46,9 +46,9 @@ if(arr.length===0){
     <div id="em_heading"><p>SHOPPING BAG</p> </div>
     <div id="em_alert"><p>Your shopping bag is empty</p></div>
     <div id="em_pagedirectors">
-        <button><a href="">SHOP MENSWERE </a></button>
-        <button><a href="">SHOP WOMENSWEAR</a></button>
-       <button><a href="">SHOP EVERYTHING ELSE</a></button></div>
+        <button><a href="/mensAll/mensA.html">SHOP MENSWERE </a></button>
+        <button><a href="/productpages/womens.html">SHOP WOMENSWEAR</a></button>
+       <button><a href="/productpages/accessories.html">SHOP EVERYTHING ELSE</a></button></div>
    </div>`
 }
 else{
