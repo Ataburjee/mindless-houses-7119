@@ -59,10 +59,10 @@
       
       
   <h4>Omkar Lakhmani</h4>
-    <ul><li>Github:@lakhmani-om2099</li>
-      <li>Github Link:https://github.com/lakhmani-om2099</li>
-      <li>Email:lakhmani.om2099@gmail.com</li>
-      <li>LinkedIn:www.linkedin.com/in/omkar-lakhmani</li></ul>
+    <ul><li>Github: lakhmani-om2099</li>
+      <li>Github Link: https://github.com/lakhmani-om2099</li>
+      <li>Email: lakhmani.om2099@gmail.com</li>
+      <li>LinkedIn: www.linkedin.com/in/omkar-lakhmani</li></ul>
 
   
   </html>
