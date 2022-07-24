@@ -38,7 +38,7 @@ function loginuser(event){
 
    
    var emailid=document.getElementById("loginemail").value;
-   if(!arr){
+   if(arr.email!==emailid){
     window.location.href="/fw18_1022/signup.html"
    }
   else{
