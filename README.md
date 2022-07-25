@@ -1,6 +1,6 @@
 <html>
   <h1>SSENSE-lifestyle Website Clone</h1>
-  <h3>In the Masai School Construct week project ,We have cloned the SSENSE-lifestyle website https://superb-puppy-eb4b8c.netlify.app/  .Sense is a shopping website that has emerging designers and streetwear brands for both men and women with global shipping.
+  <h3>In the Masai School Construct week project ,We have cloned the SSENSE-lifestyle website https://astounding-liger-97ffc4.netlify.app  .Sense is a shopping website that has emerging designers and streetwear brands for both men and women with global shipping.
     <br>  We built it in 5days with the team of 4 collaborators.</p>
    <p> Some features of our Projects-</p>
   <p> 1)A secure developers panel for Controlling Website,watching details and user's feedbacks for website.
