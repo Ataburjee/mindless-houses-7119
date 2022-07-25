@@ -1,9 +1,95 @@
-#container{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+#bogbody{
+    height: auto;
+    width: 60%;
+   
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
-#container div{
-    padding: 10px;
+#wihead{
+    height: 50px;
+    width: 100%;
+   
+}
+#wihead>h4{
+    font-size: 11px;
+}
+#wihead>p{
+    width: 80%;
+    font-size: 11px;
+}
+#mainwishlistbody{
+height: auto;
+width: 100%;
+
+}
+#wmptywish{
+    height:auto;
+    width: 100%;
+    margin-top: 30px;
+}
+#wmhead{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#wmhead>p{
+font-size: 11px;
+}
+#wmpagedirect{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#wmpagedirect>div{
+    height: 100%;
+    width: 32%;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wmpagedirect>div>a{
+    font-size: 11px;
+    color: aliceblue;
+    text-decoration: none;
+}
+#wishcontener{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+#wishcontener>div{
+    height: auto;
+    display: block;
+     padding: 5px;
+}
+#wishcontener>div>h5{
+    font-size: 12px;
+}
+#wishcontener>div>p{
+    font-size: 11px;
+}
+.addtobagwish{
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 11px;
+    color: aliceblue;
+    background-color: black;
+    cursor: pointer;
+}
+.removebtn{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
 }

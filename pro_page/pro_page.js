@@ -24,9 +24,9 @@ arr.forEach((el,index)=>{
     y.addEventListener("click",function(){
         addwishlist(el,index)
     })
-    let Z=document.querySelector("#add_to_wishlist");
+    let Z=document.querySelector("#add_to_bag");
     Z.addEventListener("click",function(){
-        ADDTOBAG(el,index)
+        adtobag(el,index)
     })
 
 })
@@ -57,9 +57,9 @@ let WISH=document.querySelector("#add_to_wishlist");
 
 
 let addToWish=(el)=>{
-    let y= JSON.parse(localStorage.getItem("Atabur")) || []
+    let y= JSON.parse(localStorage.getItem("Wishlist")) || []
     y.push(el)
-    localStorage.setItem("Atabur",JSON.stringify(y))
+    localStorage.setItem("Wishlist",JSON.stringify(y))
 console.log(y)
 alert("Added to Whishlist")
 
@@ -68,6 +68,17 @@ WISH.style.backgroundColor = "green"
 WISH.style.height = "37px"
 WISH.style.padding = "15px"
 }
+
+let  adtobag=(el,index)=>{
+    let bag= JSON.parse(localStorage.getItem("Atabur")) || []
+    bag.push(el)
+    localStorage.setItem("Atabur",JSON.stringify(bag))
+
+alert("Added to ShopinBag")
+
+}
+
+
 
 
 let deleteProduct=()=>{

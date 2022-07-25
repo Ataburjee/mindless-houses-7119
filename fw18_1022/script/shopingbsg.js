@@ -22,16 +22,13 @@ function closebox(){
     mysearchbox.style.display="none"
 }
 
-<<<<<<< Updated upstream
-var user=JSON.parse(localStorage.getItem("User"))||null
-console.log(user)
-if(!user){
-=======
+
+
 var userarr=JSON.parse(localStorage.getItem("User"))||null;
 
 
 if(!userarr){
->>>>>>> Stashed changes
+
     document.getElementById("bogbody").innerHTML=`<div id="emptybag"> 
     <div id="em_heading"><p>SHOPPING BAG</p> </div>
     <div id="em_alert"><p>Your shopping bag is empty</p></div>
@@ -44,13 +41,10 @@ if(!userarr){
 
 
 
-<<<<<<< Updated upstream
-var arr=[ 
-]
-=======
+
 let arr=JSON.parse(localStorage.getItem("Atabur")) || [];
 
->>>>>>> Stashed changes
+
 
 let my_shopingbag=document.getElementById("bogbody")
 if(arr.length===0){
@@ -656,5 +650,4 @@ function addtocart(el){
 }
 
  
-
 
