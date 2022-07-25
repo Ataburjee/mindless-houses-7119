@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./whish.css">
+    <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+   <!--Fontawsem kitcode-->
+   <script src="https://kit.fontawesome.com/2590fb7d46.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="/fw18_1022/style/navbar.css">
+   <link rel="stylesheet" href="/fw18_1022/style/shopingbag.css">
+</head>
+<body>
+     <!--Navbar-->
+   <div id="navbar"></div>
+    <div id="container"></div>
+      <!--Shopinpage body-->
+      <div id="bogbody">
+        
+    </div>
+    
+<!---Fotter-->
+<div id="fotter"></div>
+</body>
+</html>
+<script type="module">
+    import {navbar,fotter} from "/fw18_1022/components/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+    document.getElementById("fotter").innerHTML=fotter()
+    
+     
+    
+    
+    </script>
+<script>
+
+
+
+    let appendData=()=>{
+        let xy=JSON.parse(localStorage.getItem("Atabur")) || [];
+      console.log(xy)
+
+    xy.forEach(({image,price,name},index)=>{
+    let cont=document.querySelector("#container");
+    let div=document.createElement("div")
+
+    let img=document.createElement("img");
+    img.src=image;
+
+    let name=document.createElement("h3");
+    name.innerText=name
+    let name1=document.createElement("p");
+    name1.innerText=price
+    let div11 = document.createElement("div")
+    let btn=document.createElement("button")
+        btn.innerText="Remove";
+        btn.addEventListener("click",function(){
+            remove(index);
+        })
+        let btn1=document.createElement("button")
+        btn1.innerText = "ADD TO BAG"
+        btn1.addEventListener("click",function(){
+            // add_to_bag(xy)
+            console.log(xy[index])
+        })
+        div11.append(btn, btn1)
+
+    div.append(img,div11,name,name1)
+    cont.append(div)
+})
+    }
+
+
+appendData()
+function remove(index){
+    let xy=JSON.parse(localStorage.getItem("Atabur")) || [];
+
+    let newData=xy.filter(function(ele,i){
+        if(i===index)
+        {
+            let trash=JSON.parse(localStorage.getItem("trash")) || []
+            trash.push(ele)
+            localStorage.setItem("trash",JSON.stringify(trash))
+        }
+        else{
+            return i!== index;
+        }
+        window.location.reload();
+    });
+    localStorage.setItem("Atabur",JSON.stringify(newData));
+    appendData();
+};
+
+let arr=JSON.parse(localStorage.getItem("Atabur")) || [];
+console.log(arr)
+
+let my_shopingbag=document.getElementById("bogbody")
+if(arr.length===0){
+    my_shopingbag.innerHTML=`<div id="emptybag"> 
+    <div id="em_heading"><p>SHOPPING BAG</p> </div>
+    <div id="em_alert"><p>Your shopping bag is empty</p></div>
+    <div id="em_pagedirectors">
+        <button><a href="">SHOP MENSWERE </a></button>
+        <button><a href="">SHOP WOMENSWEAR</a></button>
+       <button><a href="">SHOP EVERYTHING ELSE</a></button></div>
+   </div>`
+}
+else{
+    my_shopingbag.innerHTML=`<div id="main_body_bag">
+    <!---ALl Bag Items and there deatails with Total amount-->
+    <div id="bagproducts_deatels">
+       <div id="spbhead"><p class="h11">SHOPPING BAG</p></div>
+    <div id="spbheadtitle">
+        <div id="itme"><p class="h12">ITEM</p></div>
+        <div id="total"><p class="h12">TOTAL</p></div>
+    </div>
+    <div id="container0">
+
+    </div>
+    <div id="totalOf_bag">
+     <div id="tbsubh">
+     <p class="to1">Total</p>
+     <p class="to2">Shiping estimate</p>
+     <p class="to3">Order Total</p>
+     </div>
+     <div id="tbsubh01">
+        <p class="to11">Total</p>
+     <p class="to22"> calculate at Checkout</p>
+     <p class="to33">Order Total</p>
+     </div>
+    
+    </div>
+    <div id="popularItm">
+        <div><p class="h11">ADD THESE POPULAR ITEMS</p>
+        
+        <div id="ppcontainer"></div></div>
+    </div>
+    </div>
+
+
+
+    <!---Procide To Checkout button-->
+    <div id="proiead_to_checkoutpage">
+       <div id="ptcphead"><p class="h11">LOGGEND IN AS</p></div>
+       <div id="ptcpemailadd">
+        <p class="h11" id="user_bag_mail">apsundeharshal@gmail.com</p>
+        <p class="h12">Not your account? <a class="h12" href="">Sign in as another user</a></p>
+       </div>
+       <button id="procied_to_checoutbtn"> PROCEED TO CHECKOUT</button>
+    </div>
+</div>`
+
+let containerbag=document.getElementById("container0")
+let bag=["FR","TR","SM","FH"]
+arr.forEach((el)=>{
+ let box=document.createElement("div")
+ box.setAttribute("id","bagbox")
+
+ let imgdiv=document.createElement("div")
+  imgdiv.setAttribute("id","imgdiv")
+ let image=document.createElement("img")
+ image.src=el.image
+ imgdiv.append(image)
+
+
+ let descdiv=document.createElement("div")
+ descdiv.setAttribute("id","descdiv")
+
+ let descdiv1=document.createElement("div")
+ descdiv1.setAttribute("id","descdiv1")
+ let title=document.createElement("h2")
+ title.innerText=el.title;
+ let details=document.createElement("p")
+ details.innerText=el.detail
+ let size=document.createElement('p')
+
+ size.innerText="SIZE"+":"+" "+bag[Math.floor(Math.random()*bag.length)]
+ let h4=document.createElement('h5')
+h4.innerText="Move To Watchlist"
+
+
+ descdiv1.append(title,details,size,h4)
+ let descdic2=document.createElement("div")
+let price=document.createElement("h2")
+price.innerText="$"+el.price+" "+"USD"
+let remove=document.createElement("h4")
+remove.innerText="remove"
+
+descdic2.append(price,remove)
+ descdic2.setAttribute("id","descdiv2")
+
+descdiv.append(descdiv1,descdic2)
+ box.append(imgdiv,descdiv)
+ containerbag.append(box)
+
+})
+
+}
+
+
+// let add_to_bag = () => {
+//     let box = document.getElementById("add_to_bag")
+//     box.innerText = "PROCEED TO CHECKOUT"
+//     // console.log(pro_page_data)
+//     box.addEventListener("click",function(){
+//         window.location.href = ""   //proceed to checkout page have to add
+//     })
+// }
+
+</script>
