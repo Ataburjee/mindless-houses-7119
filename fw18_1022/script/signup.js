@@ -30,17 +30,34 @@ creatacount.addEventListener("click",function(event){
     creat_acount(event)
 })
 
-var arr=JSON.parse(localStorage.getItem("User"))||null
+
 
 function  creat_acount(event){
 event.preventDefault()
-let user={
-    "email":document.getElementById("signupmail").value,
-    "password":document.getElementById("signuppass").value,
+var arr=JSON.parse(localStorage.getItem("User"))||[]
+let bag=true
+for(let i=0;i<arr.length;i++){
+    if(arr[i].email===document.getElementById("signupmail").value){
+        bag=false;
+        alert("User Alrady exist Please Login ..!")
+       break;
+    }
 }
 
-localStorage.setItem("User",JSON.stringify(user))
-window.location.href="/fw18_1022/login.html"
-console.log(user)
+if(bag===true){
+    let user={
+        "email":document.getElementById("signupmail").value,
+        "password":document.getElementById("signuppass").value,
+    }
+    arr.push(user)
+    localStorage.setItem("User",JSON.stringify(arr))
+    alert("Sign up Successful...")
+    window.location.href="/fw18_1022/login.html" 
+}
+
+
+
+
+
 
 }

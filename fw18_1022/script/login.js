@@ -30,23 +30,33 @@ function closebox(){
 
 let user=document.getElementById("loinus")
 user.addEventListener("click",function(event){
-    loginuser(event)
+  loginuser(event)
 })
-var arr=JSON.parse(localStorage.getItem("User"))||null
-function loginuser(event){
-    event.preventDefault()
 
-   
-   var emailid=document.getElementById("loginemail").value;
-   if(arr.email!==emailid){
-    window.location.href="/fw18_1022/signup.html"
+function loginuser(event){
+   event.preventDefault()
+   let arr=JSON.parse(localStorage.getItem("User"))||[]
+   let bag=false
+   for(let i=0;i<arr.length;i++){
+    if(arr[i].email===document.getElementById("loginemail").value){
+        bag=true;
+        break;
+    }
    }
-  else{
-    document.getElementById("loinus").style.display="none";
-    document.getElementById("displaypass").style.display="block";
-    
-  }
+    if(bag){
+        document.getElementById("loinus").style.display="none";
+        document.getElementById("displaypass").style.display="block";
+    }
+    else{
+    window.location.href="/fw18_1022/signup.html"
+    }
 }
+
+
+
+
+
+
 
 
 
@@ -55,12 +65,35 @@ document.getElementById("loginpassword").addEventListener("click",function(){
     mainlogin()
 })
 function mainlogin(){
-  
-   if(arr.password!==document.getElementById('loginpass').value){
-      alert("Incorect Password")
-   }
-   else{
+    
+    let arr=JSON.parse(localStorage.getItem("User"))||[]
+    let bag=false
+    for(let i=0;i<arr.length;i++){
+       if(arr[i].email===document.getElementById("loginemail").value && arr[i].password===document.getElementById("loginpass").value){
+       bag=true;
+       break;
+       }
+       
+    }
+   
+
+   if(bag===true){
     alert("Login Sucssesfull...!")
     window.location.href="/index.html"
-   } 
+   }
+   else{
+    alert("Incorect Password")
+   }
+  
+}
+
+document.getElementById("not").addEventListener("click",function(){
+   notemail()
+})
+
+function notemail(){
+
+    window.location.href="/fw18_1022/signup.html"
+
+
 }
