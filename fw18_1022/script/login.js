@@ -36,20 +36,26 @@ user.addEventListener("click",function(event){
 function loginuser(event){
    event.preventDefault()
    let arr=JSON.parse(localStorage.getItem("User"))||[]
-   let bag=false
-   for(let i=0;i<arr.length;i++){
-    if(arr[i].email===document.getElementById("loginemail").value){
-        bag=true;
-        break;
-    }
-   }
-    if(bag){
-        document.getElementById("loinus").style.display="none";
-        document.getElementById("displaypass").style.display="block";
-    }
-    else{
+   if(arr.length==0){
     window.location.href="/fw18_1022/signup.html"
+   }
+   else{
+    let bag=false
+    for(let i=0;i<arr.length;i++){
+     if(arr[i].email===document.getElementById("loginemail").value){
+         bag=true;
+         break;
+     }
     }
+     if(bag){
+         document.getElementById("loinus").style.display="none";
+         document.getElementById("displaypass").style.display="block";
+     }
+     else{
+     window.location.href="/fw18_1022/signup.html"
+     }
+   }
+   
 }
 
 
